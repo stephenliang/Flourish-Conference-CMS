@@ -1,0 +1,33 @@
+body {
+				font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif
+			}
+			
+			p {
+				font-size: 13px;
+			}
+			
+			.content {
+				max-width:800px;
+				border-radius: 15px;	
+				margin: auto;
+				padding: 15px;
+				border: 1px solid #000;
+			}
+			
+			
+			
+			#menu {
+				text-align: center;
+				
+			}
+			
+			.menu_item {
+				padding: 0px 8px;
+			}
+			
+			#footer {
+				text-align: center;
+			}
+			#logo {
+				text-align: center;
+			}
