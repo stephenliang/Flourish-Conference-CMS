@@ -19,7 +19,6 @@ include (SITE_PATH."includes/constants.php");
 include (SITE_PATH."includes/functions.php");
 
 require(SITE_PATH.'smarty/libs/Smarty.class.php');
-require(SITE_PATH.'includes/xmlparser.php');
 include (SITE_PATH."includes/db/mysql4.php");
 include (SITE_PATH."includes/db/db.php");
 
