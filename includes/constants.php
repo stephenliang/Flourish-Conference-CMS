@@ -1,13 +1,5 @@
 <?php
-/**
-@Author: Life & Flash
-@version: 06/12/26
-@copyright: MapleTip.com
-*/
-if($_SERVER['HTTP_HOST'] == "chisocdev01pp.chi.orbitz.net")
-define('ROOT', 'http://chisocdev01pp.chi.orbitz.net/~sliang');
-else 
-define('ROOT', 'http://chisoc01pp.chi.orbitz.net/ops/hourlytool2');
+define('ROOT', 'http://www.flourishconf.com/2012');
 
 $ext = '.tpl'; // Required for template files.
 
