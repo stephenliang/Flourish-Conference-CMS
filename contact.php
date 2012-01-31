@@ -6,6 +6,6 @@ include (SITE_PATH."common.php");
 
 //We reached end, parse and end
 include (SITE_PATH."footer.php");
-$smarty->display('index.tpl');
+$smarty->display('contact.tpl');
 //We're out of here.
 ?>

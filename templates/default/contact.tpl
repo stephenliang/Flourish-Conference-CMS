@@ -1,5 +1,5 @@
 {config_load file=default.conf section=$site}
-{include file="header.tpl"}
+{include file="header.tpl" title="Contact Us"}
 
 		<p>Welcome to the Flourish! Open Source Conference 2012 Website. We are not quite ready to show you much content yet but please stay tuned for updates while we put together the conference.<br /><br />
 		
