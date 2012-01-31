@@ -1,4 +1,4 @@
-<?
+<?php
 
 // PREVENT PEOPLE VIEWING THIS PAGE BY ITSELF
 if ( !defined('HACKFREE') )
