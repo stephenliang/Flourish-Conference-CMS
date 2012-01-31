@@ -1,7 +1,6 @@
 {config_load file=default.conf section=$site}
-{include file="header.tpl"}
+{include file="header.tpl" title="About Us"}
 
-		<p>
 			<h3>About</h3>
 
 			<h5>History</h5>
@@ -9,5 +8,4 @@
 			<h5>Our Mission</h5>
 	The goal of the Flourish Conference is to promote the use and adoption of Free Libre Open Source Software (FLOSS) by demonstrating the practical applications of FLOSS in the business and academic world. While everyone is familiar with businesses that focus on creating non-free proprietary software, the same cannot be said for those who specialize in developing and supporting FLOSS software and Open Culture. Attendees of Flourish have an opportunity to see how using, creating and supporting FLOSS software can enhance their careers, businesses and academic aspirations.
 
-		</p>
 {include file="footer.tpl"}
