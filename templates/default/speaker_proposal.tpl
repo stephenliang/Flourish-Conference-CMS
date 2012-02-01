@@ -12,26 +12,26 @@ Past presentations have been fairly high-level and tackled a diverse array of to
 				<h1 class="content-title">Speaker Details</h1>
 
 				<strong>Name</strong>:<br />
-				<input type="text" name="name" />
+				<input type="text" name="name" value="{$POST.name}" />
 				<br /><br />
 				<strong>Company (optional)</strong>:<br />
-				<input type="text" name="company" />
+				<input type="text" name="company" value="{$POST.company}" />
 				<br /><br />
 			
 				<strong>Title</strong>:<br />
-				<input type="text" name="title" />
+				<input type="text" name="title" value="{$POST.title}" />
 				<br /><br />
 				
 				<strong>Phone (optional)</strong>:<br />
-				<input type="text" name="phone" />
+				<input type="tel" name="phone" value="{$POST.phone}" />
 				<br /><br />
 				
 				<strong>E-Mail</strong>:<br />
-				<input type="text" name="email" />
+				<input type="text" name="email" value="{$POST.email}" />
 				<br /><br />
 				
 				<strong>Bio</strong>:<br />
-				<textarea name="bio"></textarea>
+				<textarea name="bio">{$POST.bio}</textarea>
 				<br /><br />
 
 				<hr class="separator" />
@@ -39,20 +39,25 @@ Past presentations have been fairly high-level and tackled a diverse array of to
 				<h1 class="content-title">Presentation Details</h1>
 				
 				<strong>Title of Presentation</strong>:<br />
-				<input type="text" name="titlePresentation" />
+				<input type="text" name="titlePresentation" value="{$POST.titlePresentation}" />
 				<br /><br />
 				
 				<strong>Description of Presentation</strong>:<br />
-				<input type="text" name="description" />
+				<textarea name="description">{$POST.description}</textarea>
 				<br /><br />
 
 				<strong>Special A/V Requirements (optional)</strong>:<br />
-				<textarea name="av"></textarea>
+				<textarea name="av">{$POST.av}</textarea>
 				<br /><br />
 
 				<strong>Other Needs (optional)</strong>:<br />
-				<textarea name="other"></textarea>
+				<textarea name="other">{$POST.other}</textarea>
 				<br /><br />
+
+				<strong>Enter recaptcha code</strong>
+				{$recaptcha}
+				<br /><br />
+
 				<input type="submit" name="submit" value="Submit Speaker Proposal" />
 			</form>
 {include file="footer.tpl"}

@@ -58,3 +58,20 @@ textarea {
 	background-color: #000;
 	color: #000;
 }
+
+.error-box {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	border-radius: 15px;	
+	border: 1px solid red;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+#error-img {
+	height: 40px;
+	width: 40px;
+	margin-right: 15px;
+}

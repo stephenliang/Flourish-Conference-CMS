@@ -21,6 +21,7 @@ include (SITE_PATH."includes/functions.php");
 require(SITE_PATH.'smarty/libs/Smarty.class.php');
 include (SITE_PATH."includes/db/mysql4.php");
 include (SITE_PATH."includes/db/db.php");
+include (SITE_PATH."includes/recaptchalib.php");
 
 // We do not need this any longer, unset for safety purposes
 unset($dbpasswd);
