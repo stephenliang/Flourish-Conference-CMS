@@ -2,10 +2,6 @@ body {
 				font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif
 			}
 			
-			p {
-				font-size: 13px;
-			}
-			
 			.content {
 				border-radius: 15px;	
 				margin: auto;
@@ -45,7 +41,7 @@ body {
 	text-align: center;
 }
 
-input {
+input[type=text] {
 	width: 200px;
 }
 
@@ -151,6 +147,7 @@ img {
 #old-flourish {
 	right: 48px;
 	top: 17px;
+	font-size: 10pt;
 	position: absolute;
 }
 
@@ -160,4 +157,33 @@ img {
 
 #logo img {
 	width: 800px;
+}
+
+.big-button {
+	height: 200px;
+	width: 300px;
+	font-size: 14pt;
+	background-color: #D3AD3D;
+	color: #FBFBEE;
+}
+
+.long {
+	height: 400px;
+}
+
+.long-img {
+	float: right;
+	border: 5px solid #ccc;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 275px;
+}
+
+.long-img img {
+	width: 275px;
+}
+
+#thanks-img {
+	text-align: center;
+	height: 200px;
 }
