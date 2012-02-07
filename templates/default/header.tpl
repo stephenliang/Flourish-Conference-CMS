@@ -8,9 +8,12 @@
 		<script src="{#ROOT#}/jscript/jquery-1.7.1.min.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/tiny_mce/jquery.tinymce.js" type="text/javascript"></script>
+		<script src="{#ROOT#}/jscript/twitter.js" type="text/javascript"></script>
 	</head>
 
 	<body>
+		<div id="main-container">
+		<!-- Place this tag where you want the +1 button to render -->
 		<div id="logo"><a href="{#ROOT#}"><img src="/2012/images/flourish_logo.png" alt="" /></a></div>
 
 		<br />
