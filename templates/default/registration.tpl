@@ -42,6 +42,12 @@
 				<strong>Where did you hear about us? (optional)</strong>:<br />
 				<input type="text" name="hear" value="{$POST.hear}" />
 				<br /><br />
+
+				<strong>Where are you from? (optional)</strong>:<br />
+				<input type="text" name="where" value="{$POST.where}" />
+				<br /><br />
+
+
 				<strong>Comments (optional)</strong>:<br />
 				<textarea name="comments">{$POST.comments}</textarea>
 				<br /><br />

@@ -21,11 +21,11 @@ if ( $_POST )
 
 	$stmt = $db->stmt_init();
 
-	$sql = "INSERT INTO ". REGISTRATION_TABLE ." (`name`, `email`, `size`, `student`, `hear`, `comments`, `ip_address`) VALUES (?, ?, ?, ?, ?, ?, ?)";
+	$sql = "INSERT INTO ". REGISTRATION_TABLE ." (`name`, `email`, `size`, `student`, `hear`, `comments`, `ip_address`, `where`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 	if ( $stmt->prepare($sql) && !$error)
 	{
-		$stmt->bind_param("sssssss", $_POST['name'], $_POST['email'], $_POST['size'], $_POST['student'], $_POST['hear'], $_POST['comments'], $_SERVER['REMOTE_ADDR']);
+		$stmt->bind_param("ssssssss", $_POST['name'], $_POST['email'], $_POST['size'], $_POST['student'], $_POST['hear'], $_POST['comments'], $_SERVER['REMOTE_ADDR'], $_POST['where']);
 
 		if( $stmt->execute() )
 		{
