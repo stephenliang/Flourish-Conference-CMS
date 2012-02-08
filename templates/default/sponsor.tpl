@@ -4,7 +4,7 @@
 			<h1 class="content-title">Sponsorship Information</h1>
 
 			<div class="essay">
-				<span class="right-img"><a href="{#ROOT#}/images/sponsorship.jpg"><img src="{#ROOT#}/images/sponsorship.jpg" class="medium" /></a><div class="caption">Flourish is a free to attend conference and your donations will help us a lot!</div></span>
+				<span class="right-img"><a href="{#ROOT#}/images/sponsorship.jpg"><img src="{#ROOT#}/images/sponsorship.jpg" class="medium" alt="" /></a><span class="caption">Flourish is a free to attend conference and your donations <br />will help us a lot!</span></span>
 				<p>Thank you for your interest in sponsoring the Flourish 2011 open source computing conference! The conference seeks to bring together some of the brightest developers and thinkers from the open source community to Chicago. We hope that through community-driven presentations, workshops, and other activities, we can all promote a feeling of interconnectedness and inspire others. </p>
 		
 				<p>The open source philosophy states that software source code should be free, easily shared, and available to anyone. This philosophy of openness has allowed for the creation of software such as the Linux operating system, the Firefox web browser, Wikipedia and the Apache web server. Presently, it has permeated almost every facet of the computing world, as well as attracted a variety of talented developers and progressive businesses into embracing the open source philosophy. </p>

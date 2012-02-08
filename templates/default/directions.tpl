@@ -6,7 +6,7 @@
 			<h2>Location</h2>
 			<div class="essay">
 				<span class="right-img">
-				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=750+S+Halsted+St,+Chicago,+IL+60607&amp;aq=0&amp;oq=750+S.+Halsted&amp;sll=37.0625,-95.677068&amp;sspn=56.724997,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=750+S+Halsted+St,+Chicago,+Illinois+60607&amp;t=m&amp;z=14&amp;iwloc=r2&amp;ll=41.871914,-87.64751&amp;output=embed"></iframe>
+				<iframe width="425" height="350" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=750+S+Halsted+St,+Chicago,+IL+60607&amp;aq=0&amp;oq=750+S.+Halsted&amp;sll=37.0625,-95.677068&amp;sspn=56.724997,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=750+S+Halsted+St,+Chicago,+Illinois+60607&amp;t=m&amp;z=14&amp;iwloc=r2&amp;ll=41.871914,-87.64751&amp;output=embed"></iframe>
 				</span>
 				<p>
 					University of Illinois at Chicago - Student Center East<br />

@@ -8,7 +8,7 @@
 		<h1 class="content-title">Welcome to Flourish! Open Source Conference 2012!</h1>
 		<div class="essay">
 				<div id="notice">Registration for Flourish 2012 has now been opened! Please visit the <a href="{#ROOT#}/registration.php">registration page</a> to register for the conference. Please remember that only the attendees that register in advance will be guaranteed a free T-Shirt!</div>
-				<span class="right-gallery-img"><div id="cycle"></div></span>
+				<span class="right-gallery-img"><span id="cycle"></span></span>
 				<p>Welcome to the Flourish 2012 Open Source Conference website! This is Flourish Conference's <strong>sixth</strong> annual student-led conference hosted at the <a href="http://uic.edu">The University of Illinois at Chicago</a>. We are proud to help promote the use of open source and provide a gathering place for open source enthusiasts in the Chicagoland area.</p>
 				<p>Throughout the weekend, we will bring speakers from around the country to talk about their contributions to the open source community. Topics ranging from the development of free and open source software to the issues with software patents and copyright will be discussed. Then after all the speeches are over, join us in our workshop to gain some hands-on experience.</p>
 				<p>Flourish Conference is <strong>FREE</strong> to attend and there will be free T-Shirts to those who register in advance. We really appreciate everyone for coming to Flourish Conference for the past several years and we hope to bring another great and educating year!</p>

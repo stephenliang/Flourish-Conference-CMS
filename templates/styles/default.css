@@ -152,6 +152,10 @@ textarea {
 	border: 5px solid #ccc;
 }
 
+.right-gallery-img span {
+	display: block;
+}
+
 
 .medium {
 	height: 250px;
@@ -172,6 +176,7 @@ img {
 .caption {
 	padding: 5px;
 	font-size: 8pt;
+	display: block;
 }
 
 #old-flourish {
@@ -271,4 +276,11 @@ img {
 
 .small-resolution {
 	display: none;
+}
+
+iframe {
+	border-style: none;
+	margin: 0;
+	padding: 0px;
+	overflow: hidden;
 }
