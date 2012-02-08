@@ -18,7 +18,7 @@
 			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 			  })();
 			</script><!-- Place this tag where you want the +1 button to render -->
-			<div class="g-plusone" data-size="small" data-annotation="inline" data-width="120" data-href="http://flourishconf.com"></div>
+			<div class="g-plusone" data-size="small" data-annotation="bubble" data-width="120" data-href="http://flourishconf.com"></div>
 		</div>
 		<div id="facebook">
 			<!-- Place this render call where appropriate -->
@@ -38,6 +38,10 @@
 			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=375601199121923";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
+		</div>
+		<div id="twitter-button" class="twitter-button-large">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://flourishconf.com" data-text="Flourish! Conference 2012 in Chicago is coming Mar. 30-31, help spread the word!" data-via="flourishconf" data-hashtags="flrsh12"></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 		<div id="twitter">
 		</div>

@@ -15,6 +15,8 @@ $(document).ready( function() {
 	{
 		$("#old-flourish").hide();
 		$("#old-flourish-small").show();
+		$("#twitter-button").removeClass("twitter-button-large");
+		$("#twitter-button").addClass("twitter-button-small");
 	}
 
 });
