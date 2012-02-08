@@ -1,11 +1,11 @@
 body {
-				font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif
+				font-family: Verdana, Arial, Helvetica, sans-serif;
 			}
 			
 			.content {
 				border-radius: 15px;	
 				margin: auto;
-				padding: 15px;
+				padding: 15px 36px;
 				border: 1px solid #000;
 			}
 			
@@ -13,11 +13,12 @@ body {
 			
 			#menu {
 				text-align: center;
-				
+				font-size: 12pt;
+				line-height: 200%;
 			}
-			
+
 			.menu_item {
-				padding: 0px 8px;
+				padding: 0px 5px;
 			}
 			
 			#footer {
@@ -82,24 +83,27 @@ textarea {
 #social-container {
 	background-color: #ccc;
 	bottom: 0;
-	height: 42px;
+	height: 55px;
 	margin: 0 0 0 -8px;
 	padding-left: 15px;
 	position: fixed;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 8px;
+	z-index: 9999;
 }
 
 #google {
 	position: absolute;
 	top: 20px;
 	
+	z-index: -1;
 }
 
 #facebook {
 	position: absolute;
 	left: 105px;
 	top: 18px;
+	z-index: -1;
 }	
 
 #twitter {
@@ -123,6 +127,18 @@ textarea {
 	margin-bottom: 10px;
 }
 
+.right-gallery-img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	height: 325px;
+	width: 300px;
+	overflow: hidden;
+	display: none;
+	border: 5px solid #ccc;
+}
+
+
 .medium {
 	height: 250px;
 }
@@ -145,9 +161,11 @@ img {
 }
 
 #old-flourish {
-	right: 48px;
-	top: 17px;
+	right: 55px;
+	top: 20px;
 	font-size: 10pt;
+	text-align: right;
+	z-index: -1;
 	position: absolute;
 }
 
@@ -156,11 +174,13 @@ img {
 }
 
 #logo img {
-	width: 800px;
+	width: 100%;
+	max-width: 800px;
+	height: 286px;
 }
 
 .big-button {
-	height: 200px;
+	height: 100px;
 	width: 300px;
 	font-size: 14pt;
 	background-color: #D3AD3D;
@@ -186,4 +206,51 @@ img {
 #thanks-img {
 	text-align: center;
 	height: 200px;
+}
+
+#cycle li {
+	height: 325px;
+	width: 300px;
+	list-style-type: none;
+}
+
+#close-bar {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+
+.some-button {
+	width: 20px !important;
+	border: none !important;
+	background: transparent !important;
+}
+
+#show-social-container {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#open-button {
+	right: 24px;
+	position: absolute;
+	bottom: 18px;
+}
+
+#notice {
+	border: 1px solid #389E28;
+	background-color: #DFF5CE;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+#old-flourish-small {
+	right: 57px;
+	top: 20px;
+	font-size: 8pt;
+	z-index: -1;
+	position: absolute;
+	display: none;
 }

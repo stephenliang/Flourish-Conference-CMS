@@ -6,7 +6,7 @@
 			<div class="essay">
 				<h2>Join the listserv</h2>
 
-				<span class="right-img"><a href="{#ROOT#}/images/volunteer.jpg"><img src="{#ROOT#}/images/volunteer.jpg" class="medium" /></a><div class="caption">Flourish Volunteer speaking with attendees and speakers at Flourish <br />Conference 2010.</div></span>
+				<span class="right-img"><a href="{#ROOT#}/images/volunteer.jpg"><img src="{#ROOT#}/images/volunteer.jpg" class="medium" /></a><div class="caption">Volunteers meeting for Flourish 2010.</div></span>
 				<p>For starters, please subscribe to our listserv. You don't have to be a UIC student to join. Please send an email to <strong>listserv@uic.edu</strong>. In the BODY of the email, type "<strong>SUBSCRIBE FLOURISH</strong>" Once subscribed, you will get information regarding upcoming meetings. You can also post your thoughts and ideas for the conference. We will try and post meeting times on the site, but to make sure you are always kept abreast of all the latest happenings, please do subscribe!</p>
 
 				<h2>Request for an account on the Flourish Wiki</h2>

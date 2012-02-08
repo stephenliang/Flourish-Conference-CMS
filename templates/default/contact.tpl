@@ -3,7 +3,7 @@
 			<h1 class="content-title">Contact Information</h1>
 
 			<div class="essay">
-				<span class="long-img"><a href="{#ROOT#}/images/penguin-escalator.jpg"><img src="{#ROOT#}/images/penguin-escalator.jpg" class="long" /></a><div class="caption">Flourish Promotional Event at Student Center East at UIC.</div></span>
+				<span class="long-img"><a href="{#ROOT#}/images/penguin-escalator.jpg"><img src="{#ROOT#}/images/penguin-escalator.jpg" class="long" /></a><div class="caption">Meet Tux at Flourish Conference</div></span>
 				<h3>General Conference Information</h3>
 				<a href="mailto:info@flourishconf.com">info@flourishconf.com</a>
 				
