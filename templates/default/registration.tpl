@@ -25,7 +25,7 @@
 				<input type="radio" name="size" value="small" {if $POST.size == "small"}checked{/if}> Small <br />
 				<input type="radio" name="size" value="medium" {if $POST.size == "medium"}checked{/if}> Medium<br />
 				<input type="radio" name="size" value="large" {if $POST.size == "large"}checked{/if}> Large<br />
-				<input type="radio" name="size" value="xl {if $POST.size == "xl"}checked{/if}"> XL<br />
+				<input type="radio" name="size" value="xl" {if $POST.size == "xl"}checked{/if}> XL<br />
 				<input type="radio" name="size" value="xxl" {if $POST.size == "xxl"}checked{/if}> XXL<br />
 				<br /><br />
 
