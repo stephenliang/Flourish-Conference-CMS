@@ -161,9 +161,11 @@ textarea {
 	height: 250px;
 }
 
+.small {
+	width: 100px;
+}
 img {
 	vertical-align: middle;
-	height: 100%;
 	border-style: none;
 }
 .left-img {
