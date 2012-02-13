@@ -4,3 +4,4 @@ templates_c/*
 */*~
 *.swp
 configs/default.conf
+include/constants.php

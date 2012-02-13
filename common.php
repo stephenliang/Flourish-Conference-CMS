@@ -35,14 +35,16 @@ $smarty->cache_lifetime = 9999999;
 $smarty ->compile_check = true;
 $smarty->config_dir = SITE_PATH.'configs/';
 $smarty->cache_dir = SITE_PATH.'cache/';
-$smarty->debugging = true;
+//$smarty->debugging = true;
 $smarty->template_dir = SITE_PATH.'templates/default/';
 if ( !isset($_COOKIE['show-bar'] ) ) $_COOKIE['show-bar'] = 1;
 $browser = get_browser( null, true);
-if ( $browser['ismobiledevice'] == 1 || true ) {
+if ( $browser['ismobiledevice'] == 1 ) {
+	echo "AAAAHHH";
 	$smarty->assign('mobileDevice', 1);
   	$smarty->assign('site', "mobile");
 	$smarty->template_dir = SITE_PATH.'mobile/templates/default/';
+	$smarty ->compile_dir = SITE_PATH."templates_c/mobile";
 } else {
 $smarty->assign('showBar', $_COOKIE['show-bar']);
 //Tidy up all html
