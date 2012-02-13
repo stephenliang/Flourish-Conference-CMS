@@ -72,9 +72,9 @@
 				</ul>
 				<p>We will be happy to work with you in devising any "substitute" promotions if you find it in your company's best interest.</p>
 				<h1>Are you ready to sponsor Flourish?</h1>
-				<p>Just click on the big gold button to submit a sponsorship proposal!</p>
+
 				<form action="{#ROOT#}/sponsorship_proposal.php" method="GET">
-					<input type="submit" value="Submit a Sponsorship Proposal!" class="big-button" />
+				<input type="submit" value="Submit a Sponsorship Proposal!"/>
 				</form>
 </div>
 
