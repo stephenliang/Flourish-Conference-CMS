@@ -1,4 +1,5 @@
 $(document).ready( function() {
+	$("input:submit").button();
 	 $("#close-button").button({ icons: {primary: "ui-icon-closethick"}}).click (function() {
 		 createCookie("show-bar", 0, 30);
 		 $("#social-container").hide();
