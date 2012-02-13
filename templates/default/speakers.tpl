@@ -89,7 +89,7 @@ care of the messy part, then the developer can concentrate on developing.</td>
 					Wikipedia is a well-revered, volunteer-maintained destination for millions of Web users worldwide. Search for almost any topic and a Wikipedia entry is among the first three results. Obviously, a company has a very keen interest in terms of what is said there and, often, are tempted to surreptitiously edit an entry--an indisputably wrong thing to do. However, since some factual data often stays inaccurate for long periods, one might ask what the harm is in a corporate representative correcting, say, the founding date or the annual financials for a company. But even this example oversimplifies the complex relationship between companies (which structured by design) and open platforms like Wikipedia (spontaneously structured). After several false starts, companies and Wikipedians are starting to explore the best ways to work together. This talk will outline the history and efforts to-date.
 					</td>
 				</tr>
-
+{*
 				<tr>
 					<td><img src="{#ROOT#}/images/speakers/nopicture.png" class="small" alt="" /></a><span class="caption">Meg Ford</span></td>
 					<td></td>
@@ -107,6 +107,7 @@ care of the messy part, then the developer can concentrate on developing.</td>
 					<td></td>
 					<td></td>
 				</tr>
+*}
 			</table>
 			</div>
 
