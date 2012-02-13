@@ -41,14 +41,11 @@ if ( !isset($_COOKIE['show-bar'] ) ) $_COOKIE['show-bar'] = 1;
 $browser = get_browser( null, true);
 if ( $browser['ismobiledevice'] == 1 ) {
 	$smarty->assign('mobileDevice', 1);
-  	$smarty->assign('site', "mobile");
+  	//$smarty->assign('site', "mobile");
 	//$smarty->template_dir = SITE_PATH.'mobile/templates/default/';
 	//$smarty ->compile_dir = SITE_PATH."templates_c/mobile";
 } else {
-$smarty->assign('showBar', $_COOKIE['show-bar']);
-//Tidy up all html
-//$smarty->load_filter('output','tidyrepairhtml');
-
-$smarty->assign('site', "default");
+	$smarty->assign('site', "default");
 }
+$smarty->assign('showBar', $_COOKIE['show-bar']);
 ?>
