@@ -172,7 +172,7 @@ tr{
     padding: 3px;
     width: 300px;
 }
-#submit.button-primary {
+.button-primary {
 	background: none repeat-x scroll 0 0 #3399FF;
     border: 1px solid #555555;
     border-radius: 5px 5px 5px 5px;
@@ -183,7 +183,7 @@ tr{
     padding: 5px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
-#submit.button-secondary {
+.button-secondary {
 	background: none repeat-x scroll 0 0 #BA1B1B;
     border: 1px solid #555555;
     border-radius: 5px 5px 5px 5px;

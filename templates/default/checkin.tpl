@@ -5,18 +5,18 @@
 	<input type="text" name="search" value="" id="search" />
 	<noscript>IMPORTANT: This section requires Javascript for search and dialog functionalities! Javascript it currently detected as disabled.</noscript>
 	<table>
-	<tr><th>ID</th><th>Name</th><th>email</th><th>T-Shirt Size</th><th>Wireless Username</th><th>Wireless Password</th><th>Comments</th></tr>
+	<tr><th>ID</th><th>Name</th><th>email</th><th>T-Shirt Size</th><th>Wireless Username</th><th>Wireless Password</th><th>Comments</th><th></th></tr>
 	{foreach from=$reglist key=k item=i}
-	<tr id="result"><td>{$k}</td><td>{$i.name}</td><td>{$i.email}</td><td>{$i.tsize}</td><td>{$i.wifiuser}</td><td>{$i.wifipass}</td><td>{$i.comments}</td><td class="tdc"><div><form name="checkin-{$k}" id="checkin-{$k}" class="formcl" action="./checkin.php" method="post">
+	<tr class="result"><td>{$k}</td><td>{$i.name}</td><td>{$i.email}</td><td>{$i.tsize}</td><td>{$i.wifiuser}</td><td>{$i.wifipass}</td><td>{$i.comments}</td><td class="tdc"><div><form name="checkin1-{$k}" id="checkin1-{$k}" class="formcl" action="./checkin.php" method="post">
 	<p class="submit">
-		<input type="submit" name="submit" id="submit" class="{if $i.day1}button-secondary{else}button-primary{/if}" value="Day 1 {if $i.day1}Checkout{else}Checkin{/if}" />
+		<input type="submit" name="submit" id="submit1-{$k}" class="{if $i.day1}button-secondary{else}button-primary{/if}" value="Day 1 {if $i.day1}Checkout{else}Checkin{/if}" />
 		<input type="hidden" name="day" value="1" />
 		<input type="hidden" name="{if $i.day1}checkout_for{else}checkin_for{/if}" value="{$k}" />
 	</p>
 </form>
-<form name="checkin-{$k}" id="checkin-{$k}" class="formcr" action="./checkin.php" method="post">
+<form name="checkin2-{$k}" id="checkin2-{$k}" class="formcr" action="./checkin.php" method="post">
 	<p class="submit">
-		<input type="submit" name="submit" id="submit" class="{if $i.day2}button-secondary{else}button-primary{/if}" value="Day 2 {if $i.day2}Checkout{else}Checkin{/if}" />
+		<input type="submit" name="submit" id="submit2-{$k}" class="{if $i.day2}button-secondary{else}button-primary{/if}" value="Day 2 {if $i.day2}Checkout{else}Checkin{/if}" />
 		<input type="hidden" name="day" value="2" />
 		<input type="hidden" name="{if $i.day2}checkout_for{else}checkin_for{/if}" value="{$k}" />
 	</p>

@@ -38,7 +38,7 @@ $(window).load(function () {
 
 	//if there is text, lets filter  
 	else {  
-		filter('tbody tr#result', $(this).val());  
+		filter('tbody tr.result', $(this).val());  
 	} 
 });
 });
