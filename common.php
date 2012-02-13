@@ -40,7 +40,6 @@ $smarty->template_dir = SITE_PATH.'templates/default/';
 if ( !isset($_COOKIE['show-bar'] ) ) $_COOKIE['show-bar'] = 1;
 $browser = get_browser( null, true);
 if ( $browser['ismobiledevice'] == 1 ) {
-	echo "AAAAHHH";
 	$smarty->assign('mobileDevice', 1);
   	$smarty->assign('site', "mobile");
 	$smarty->template_dir = SITE_PATH.'mobile/templates/default/';
