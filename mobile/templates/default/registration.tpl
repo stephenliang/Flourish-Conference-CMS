@@ -33,14 +33,14 @@
 			<input type="email" name="email" value="" />
 		</div>	
 		<div data-role="fieldcontain">
-			<fieldset data-role="controlgroup">
+			<fieldset data-role="controlgroup" data-type="horizontal">
 				<legend>Choose a T-Shirt Size:</legend>
 				<input type="radio" name="size" id="size-1" value="small" checked="checked"/> 
-				<label for="size-1">Small</label>
+				<label for="size-1">S</label>
 				<input type="radio" name="size" id="size-2" value="medium"/> 
-				<label for="size-2">Medium</label>
+				<label for="size-2">M</label>
 				<input type="radio" name="size" id="size-3" value="large"/> 
-				<label for="size-3">Large</label>
+				<label for="size-3">L</label>
 				<input type="radio" name="size" id="size-4" value="xl"/> 
 				<label for="size-4">XL</label>
 				<input type="radio" name="size" id="size-5" value="xxl"/> 
