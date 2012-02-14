@@ -47,6 +47,14 @@
 				<label for="size-5">XXL</label>
 			</fieldset>
 		</div>	
+		
+		<div data-role="fieldcontain">
+			<label for="laptop">Are you bringing a laptop?</label>
+			<select id="flip-1" name="laptop" data-role="slider">
+				<option value="no">No</option>
+				<option value="yes">Yes</option>
+			</select>
+		</div>	
 		</form>
 
         </div><!-- /content -->
