@@ -1,6 +1,6 @@
 {config_load file='default.conf' section=$site}
 {include file="header.tpl" title="Main"}
-<div data-role="page">
+<div data-role="page" id="main">
 
         <div data-role="header">
                 <h1>Flourish! Conference 2012</h1>
@@ -18,13 +18,25 @@
         <ul data-role="listview" data-inset="true" data-filter="false">
 
                 <li><a href="{#ROOT#}/registration.php">Registration</a></li>
-                <li><a href="#">Sponsor</a></li>
-                <li><a href="#">Mini-Expo</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Past Events</a></li>
+                <li><a href="{#ROOT#}/sponsor.php">Sponsor</a></li>
+                <li><a href="{#ROOT#}/mini-expo.php">Mini-Expo</a></li>
+                <li><a href="{#ROOT#}/about.php">About</a></li>
+                <li><a href="#pastevents">Past Events</a></li>
 
         </ul><!-- /listview  sitenav-->
 
         </div><!-- /content -->
+</div><!-- page -->
+<div data-role="pastevents">
+        <div data-role="header">
+                <h1>Past Events</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+		<a href="/2011">2011</a> 
+ <a href="/flourish2010">2010</a> 
+ <a href="/flourish2009">2009</a> 
+ <a href="/flourish2008">2008</a> 
+ <a href="/index2007.php">2007</a>
+	</div>
 </div><!-- page -->
 {include file="footer.tpl" title="Main"}
