@@ -17,15 +17,15 @@
 		</ul>
 		{/if}
 		<div data-role="collapsible-set">
-			<div data-role="collapsible" collapsed="false">
+			<div data-role="collapsible" data-collapsed="false">
 				<h3>Preface</h3>
 				<p>
 					Registration is now open for the public to sign up for Flourish! Open Source Conference 2012. We are happy to have you come to the conference and we hope that you will have a good time. Flourish Confrence is a <strong>free</strong> and open to the public conference. We encourage you to bring friends, family, and co-workers to our conference.</p>
 			</div><!-- /collapsible -->
-			<div data-role="collapsible" collapsed="true">
+			<div data-role="collapsible" data-collapsed="true">
 			<h3>Note</h3><p>We have a limited supply of T-Shirts available and therefore, only those who register in advance are guaranteed a T-Shirt.</p>
 			</div>
-			<div data-role="collapsible" collapsed="true">
+			<div data-role="collapsible" data-collapsed="true">
 			<h3>Disability Notice</h3> <p>If you need special accommodations due to a disability, please email <a href="mailto:info@flourishconf.com">info@flourishconf.com</a> to let us know and we will try our best to ensure you have the best experience at Flourish Conference.</p>
 			</div>
 

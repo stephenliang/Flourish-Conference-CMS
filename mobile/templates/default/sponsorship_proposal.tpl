@@ -13,7 +13,7 @@
 			</li>
 		</ul>
 		{/if}
-		<div data-role="collapsible" collapsed="false">
+		<div data-role="collapsible" data-collapsed="false">
 			<h3>Preface</h3>
 			<p>
 			The Flourish organizers are now accepting sponsorship proposals for Flourish 2012. Please review the <a href="{#ROOT#}/sponsor.php" rel="external">Sponsorship Information Page</a> for more information on what you get for sponsoring Flourish. </p>
