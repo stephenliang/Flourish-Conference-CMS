@@ -3,6 +3,7 @@ define('SITE_PATH', './');
 define('HACKFREE', 1);
 //// INCLUDE INFO
 include (SITE_PATH."common.php");
+include ("config.php");
 
 if ( $_POST )
 {
@@ -67,9 +68,12 @@ $smarty->assign('POST', $_POST);
 
 //We reached end, parse and end
 include (SITE_PATH."footer.php");
-if ( $success )
+if ( $success ) {
+	echo "loading thanks";
 	$smarty->display('thanks.tpl');
-else
+} else {
+	echo "Error: ".$stmt->error;
 	$smarty->display('registration.tpl');
+}
 //We're out of here.
 ?>

@@ -10,7 +10,7 @@ if ( !defined('HACKFREE') )
 //
 
 error_reporting(E_ALL ^ E_NOTICE); // We want all errors but them notices
-set_magic_quotes_runtime(0); // Disable magic_quotes_runtime, good programming practise
+//set_magic_quotes_runtime(0); // Disable magic_quotes_runtime, good programming practise
 ini_set("display_errors", "On");
 
 include (SITE_PATH."config.php");
@@ -35,7 +35,7 @@ $smarty->cache_lifetime = 9999999;
 $smarty ->compile_check = true;
 $smarty->config_dir = SITE_PATH.'configs/';
 $smarty->cache_dir = SITE_PATH.'cache/';
-//$smarty->debugging = true;
+$smarty->debugging = true;
 $smarty->template_dir = SITE_PATH.'templates/default/';
 if ( !isset($_COOKIE['show-bar'] ) ) $_COOKIE['show-bar'] = 1;
 $browser = get_browser( null, true);
