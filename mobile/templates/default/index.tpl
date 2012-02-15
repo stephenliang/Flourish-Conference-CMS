@@ -27,7 +27,7 @@
 
         </div><!-- /content -->
 </div><!-- page -->
-<div data-role="pastevents">
+<div data-role="page" id="pastevents">
         <div data-role="header">
                 <h1>Past Events</h1>
         </div><!-- /header -->
