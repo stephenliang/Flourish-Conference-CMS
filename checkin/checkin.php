@@ -19,21 +19,21 @@ else{
 if ($_POST['day'] && ($_POST['checkin_for'] || $_POST['checkout_for'])){
 	//checkin and checkout block
 	$stmt = $db->stmt_init();
-	$sql = "INSERT INTO `" . CHECKIN_TABLE . "` (`regid` , `checked_by` ,`day` , `check_out_in`) VALUES (?,?,?,?)";
+	$sql = "INSERT INTO `" . CHECKIN_TABLE . "` (`regid` , `day` , `check_out_in`) VALUES (?,?,?)";
 	if ($stmt->prepare($sql)){
 		if(($_POST['day'] == 1) && ($_POST['checkin_for'])) {
 			$checkin = 1;
-			$stmt->bind_param("siii", $_POST['checkin_for'], $_SESSION['SESS_USER_ID'], $_POST['day'], $checkin);
+			$stmt->bind_param("sii", $_POST['checkin_for'], $_POST['day'], $checkin);
 		}elseif(($_POST['day'] == 1) && ($_POST['checkout_for'])) {
 			$checkin = 0;
-			$stmt->bind_param("siii", $_POST['checkout_for'], $_SESSION['SESS_USER_ID'], $_POST['day'], $checkin);
+			$stmt->bind_param("sii", $_POST['checkout_for'], $_POST['day'], $checkin);
 		}
 		if(($_POST['day'] == 2) && ($_POST['checkin_for'])) {
 			$checkin = 1;
-			$stmt->bind_param("siii", $_POST['checkin_for'], $_SESSION['SESS_USER_ID'], $_POST['day'], $checkin);
+			$stmt->bind_param("sii", $_POST['checkin_for'], $_POST['day'], $checkin);
 		}elseif(($_POST['day'] == 2) && ($_POST['checkout_for'])) {
 			$checkin = 0;
-			$stmt->bind_param("siii", $_POST['checkout_for'], $_SESSION['SESS_USER_ID'],$_POST['day'], $checkin);
+			$stmt->bind_param("sii", $_POST['checkout_for'], $_POST['day'], $checkin);
 		}
 		if( $stmt->execute() ) {
 			if($_POST['checkin_for']) {
