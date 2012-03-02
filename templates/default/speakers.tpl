@@ -60,7 +60,7 @@ care of the messy part, then the developer can concentrate on developing.</p></t
 				</tr>
 
 				<tr>
-					<td><img src="{#ROOT#}/images/speakers/brianfitzpatrick.jpg" class="small" alt="" /></a><span class="caption">Briani Fitzpatrick</span></td>
+					<td><img src="{#ROOT#}/images/speakers/brianfitzpatrick.jpg" class="small" alt="" /></a><span class="caption">Brian Fitzpatrick</span></td>
 					<td>
 <p>Brian Fitzpatrick started Google's Chicago engineering office in
 2005.  An open source contributor for over 13 years, Brian is the
