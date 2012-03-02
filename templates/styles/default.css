@@ -1,15 +1,11 @@
 body {
-				font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif
-			}
-			
-			p {
-				font-size: 13px;
+				font-family: Verdana, Arial, Helvetica, sans-serif;
 			}
 			
 			.content {
 				border-radius: 15px;	
 				margin: auto;
-				padding: 15px;
+				padding: 15px 36px;
 				border: 1px solid #000;
 			}
 			
@@ -17,11 +13,12 @@ body {
 			
 			#menu {
 				text-align: center;
-				
+				font-size: 12pt;
+				line-height: 200%;
 			}
-			
+
 			.menu_item {
-				padding: 0px 8px;
+				padding: 0px 5px;
 			}
 			
 			#footer {
@@ -41,11 +38,19 @@ body {
 	border-bottom: 1px dashed #000;
 }
 
+tr , td {
+	vertical-align: top;
+	border-top: 1px solid gray;
+}
+
+td {
+	padding: 5px;
+}
 .content-title {
 	text-align: center;
 }
 
-input {
+input[type=text] {
 	width: 200px;
 }
 
@@ -86,25 +91,42 @@ textarea {
 #social-container {
 	background-color: #ccc;
 	bottom: 0;
-	height: 42px;
+	height: 55px;
 	margin: 0 0 0 -8px;
 	padding-left: 15px;
 	position: fixed;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 8px;
+	z-index: 9999;
 }
 
 #google {
 	position: absolute;
 	top: 20px;
 	
+	z-index: -1;
 }
 
 #facebook {
 	position: absolute;
-	left: 105px;
+	left: 85px;
 	top: 18px;
-}	
+	z-index: -1;
+}
+	
+.twitter-button-large {
+	position: absolute;
+	left: 175px;
+	top: 18px;
+	z-index: -1;
+}
+
+.twitter-button-small {
+	position: absolute;
+	left: 14px;
+	top: 42px;
+	z-index: -1;
+}
 
 #twitter {
 	font-size: 10pt;
@@ -127,13 +149,33 @@ textarea {
 	margin-bottom: 10px;
 }
 
+.right-gallery-img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	height: 325px;
+	width: 300px;
+	overflow: hidden;
+	display: none;
+	border: 5px solid #ccc;
+}
+
+.right-gallery-img span {
+	display: block;
+}
+
+
 .medium {
 	height: 250px;
 }
 
+.small {
+	width: 100px;
+	height:auto;
+}
 img {
 	vertical-align: middle;
-	height: 100%;
+	height:100%;
 	border-style: none;
 }
 .left-img {
@@ -146,11 +188,15 @@ img {
 .caption {
 	padding: 5px;
 	font-size: 8pt;
+	display: block;
 }
 
 #old-flourish {
-	right: 48px;
-	top: 17px;
+	right: 55px;
+	top: 20px;
+	font-size: 10pt;
+	text-align: right;
+	z-index: -1;
 	position: absolute;
 }
 
@@ -159,5 +205,94 @@ img {
 }
 
 #logo img {
-	width: 800px;
+	width: 100%;
+	max-width: 800px;
+	height: 286px;
+}
+
+.big-button {
+	height: 100px;
+	width: 300px;
+	font-size: 14pt;
+	background-color: #D3AD3D;
+	color: #FBFBEE;
+}
+
+.long {
+	height: 400px;
+}
+
+.long-img {
+	float: right;
+	border: 5px solid #ccc;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 275px;
+}
+
+.long-img img {
+	width: 275px;
+}
+
+#thanks-img {
+	text-align: center;
+	height: 200px;
+}
+
+#cycle li {
+	height: 325px;
+	width: 300px;
+	list-style-type: none;
+}
+
+#close-bar {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+
+.some-button {
+	width: 20px !important;
+	border: none !important;
+	background: transparent !important;
+}
+
+#show-social-container {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#open-button {
+	right: 24px;
+	position: absolute;
+	bottom: 18px;
+}
+
+#notice {
+	border: 1px solid #389E28;
+	background-color: #DFF5CE;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+#old-flourish-small {
+	right: 57px;
+	top: 20px;
+	font-size: 8pt;
+	z-index: -1;
+	position: absolute;
+	display: none;
+}
+
+.small-resolution {
+	display: none;
+}
+
+iframe {
+	border-style: none;
+	margin: 0;
+	padding: 0px;
+	overflow: hidden;
 }
