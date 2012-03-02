@@ -16,19 +16,18 @@
 	<body>
 		<div id="main-container">
 		<!-- Place this tag where you want the +1 button to render -->
-		<div id="logo"><a href="{#ROOT#}"><img src="images/flourish_logo.png" alt="" /></a></div>
+		<div id="logo"><a href="{#ROOT#}"><img src="{#ROOT#}/images/flourish_logo.png" alt="" /></a></div>
 
 		<br />
 		<div id="menu">
 			<span class="menu_item"><a href="{#ROOT#}/about.php">About Us</a></span>
 			<span class="menu_item"><a href="{#ROOT#}/registration.php">Registration</a></span>
 			<span class="menu_item"><a href="{#ROOT#}/speakers.php">Speakers</a></span>
+			<span class="menu_item"><a href="{#ROOT#}/schedule.php">Schedule</a></span>
 			<span class="menu_item"><a href="{#ROOT#}/sponsorship_proposal.php">Sponsorship Proposals</a></span>
-			<span class="menu_item"><a href="{#ROOT#}/speaker_proposal.php">Speaker Proposal</a></span>
 			<span class="menu_item"><a href="{#ROOT#}/miniexpo.php">Mini Expo</a></span>
 			<span class="menu_item"><a href="{#ROOT#}/directions.php">Directions</a></span>
 			<span class="menu_item"><a href="{#ROOT#}/contact.php">Contact</a></span>
-			<span class="menu_item"><a href="{#ROOT#}/volunteer.php">Volunteer</a></span>
 		</div>
 		
 		<br />

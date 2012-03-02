@@ -1,11 +1,12 @@
 <?php
-define('SITE_PATH', './');
+define('SITE_PATH', '../');
 define('HACKFREE', 1);
 //// INCLUDE INFO
 include (SITE_PATH."common.php");
+
 $stmt = $db->stmt_init();
 
-$sql = "SELECT id,name,bio,picture FROM ". SPEAKER_TABLE . " ORDER BY name ASC";
+$sql = "SELECT id,name,bio,picture FROM ". SPEAKER_TABLE;
 
 if ( $stmt->prepare($sql) )
 {
@@ -17,14 +18,12 @@ if ( $stmt->prepare($sql) )
 	{
 		$speakers[] = $row;
 	}
-
 }
 
 $stmt->close();
 $smarty->assign('speakers', $speakers);
-
 //We reached end, parse and end
 include (SITE_PATH."footer.php");
-$smarty->display('speakers.tpl');
+$smarty->display('admin/speakers_index.tpl');
 //We're out of here.
 ?>
