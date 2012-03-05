@@ -33,5 +33,18 @@
 		<br />
 
 		{if $message}<div class="error-box"><img src="{#ROOT#}/images/stop.png" id="error-img" alt="" title="CC-by-sa 2.5 from http://tango.freedesktop.org/Tango_Desktop_Project" />{$message}</div>{/if}
+		<div id="content-container">
+		<div id="flourish-helpers">
+			<span>Sponsors</span>
+			<ul>
+				<li><a href="http://orbitz.com"><img src="{#ROOT#}/images/flourish-helpers/orbitz.png" alt="Orbitz" /></a></li>
+				<li><img src="{#ROOT#}/images/flourish-helpers/safc-black.png" alt="SAFC" /></li>
+				<li><a href="http://linuxjournal.com"><img src="{#ROOT#}/images/flourish-helpers/ljcolor.jpg" alt="Linux Journal" /></a></li>
+				<li><a href="http://cs.uic.edu"><img src="{#ROOT#}/images/flourish-helpers/csdepartment.png" alt="Department of Computer Science at UIC" /></a></li>
+				<li><a href="http://spantree.net"><img src="{#ROOT#}/images/flourish-helpers/spantree.png" alt="Spantree" /></a></li>
+			</li>
+
+			<span id="sponsor-us"><a href="{#ROOT#}/sponsorship_proposal.php">Sponsor Us!</a></span>
+		</div>
 		<div class="content">
 

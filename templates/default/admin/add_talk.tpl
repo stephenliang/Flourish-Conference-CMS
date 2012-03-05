@@ -18,6 +18,7 @@
 				<select name="location">
 					<option value="Illinois A" {if $values.location == "Illinois A"}selected{/if}>Illinois A</option>
 					<option value="Illinois B" {if $values.location == "Illinois B"}selected{/if}>Illinois B</option>
+					<option value="Illinois Room C" {if $values.location == "Illinois Room C"}selected{/if}>Illinois Room C</option>
 					<option value="Cardinal Room" {if $values.location == "Cardinal Room"}selected{/if}>Cardinal Room</option>
 				</select>
 				<br /><br />

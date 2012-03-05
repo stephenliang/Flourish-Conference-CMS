@@ -8,17 +8,16 @@ if ( $_POST )
 {
 	if ( !$_POST['name'] ) $error = "Please enter your name";
 	if ( !$_POST['bio'] ) $error = "Please enter a bio";
-	if ( !$_POST['talkTitle'] ) $error = "Please enter a talk title";
-	if ( !$_POST['talkDescription'] ) $error = "Please enter a talk description";
 
 	$stmt = $db->stmt_init();
 
-	$sql = "INSERT INTO ". SPEAKER_TABLE ." (`name`, `bio`, `talkTitle`, `talkDescription`, `picture`) VALUES (?, ?, ?, ?, ?)";
+	$sql = "INSERT INTO ". SPEAKER_TABLE ." (`name`, `bio`, `picture`, `hideGallery`) VALUES (?, ?, ?, ?)";
 
 	if ( $stmt->prepare($sql) && !$error)
 	{
 		$picHash = hash("sha512", time().$_POST['name']).".jpg";
-		$stmt->bind_param("sssss", $_POST['name'], $_POST['bio'], $_POST['talkTitle'], $_POST['talkDescription'], $picHash );
+		if ( $_POST['gallery'] == "on" ) $gallery = 1; else $gallery = 0;
+		$stmt->bind_param("sssi", $_POST['name'], $_POST['bio'], $picHash, $gallery );
 
 		move_uploaded_file($_FILES['picture']['tmp_name'], SITE_PATH."/images/speakers/".$picHash);
 
@@ -37,13 +36,12 @@ if ( $_POST )
 
 	if ( !$success && !$error )
 	{
-		$error ="There was an error regestering you for the conference, please email us at <a href=\"mailto:". CONTACT_EMAIL ."\">". CONTACT_EMAIL ."</a> to report the error.";
+		$error ="There was an error, please email us at <a href=\"mailto:". CONTACT_EMAIL ."\">". CONTACT_EMAIL ."</a> to report the error.";
 	}
 
 	if ( $error ) $smarty->assign('message', $error);
 }
 
-$smarty->assign('recaptcha', recaptcha_get_html(RECAPTCHA_PUBLIC_KEY));
 $smarty->assign('POST', $_POST);
 
 //We reached end, parse and end

@@ -13,17 +13,13 @@
 				<strong>Bio</strong>:<br />
 				<textarea name="bio">{$POST.bio}</textarea>
 				<br /><br />
-				
-				<strong>Talk Title</strong>:<br />
-				<input type="text" name="talkTitle" value="{$POST.talkTitle}" />
-				<br /><br />
-
-				<strong>Talk Description</strong>:<br />
-				<textarea name="talkDescription">{$POST.talkDescription}</textarea>
-				<br /><br />
-				
+							
 				<strong>Upload Picture</strong>:<br />
 				<input type="file" name="picture" />
+				<br /><br />
+
+				<strong>Do not show in gallery?</strong><br />
+				<input type="checkbox" name="gallery" {if $POST.gallery == "on"}checked{/if} />
 				<br /><br />
 
 				<input type="submit" name="submit" value="Add new Speaker" />

@@ -5,7 +5,7 @@ define('HACKFREE', 1);
 include (SITE_PATH."common.php");
 $stmt = $db->stmt_init();
 
-$sql = "SELECT id,name,bio,picture FROM ". SPEAKER_TABLE . " ORDER BY name ASC";
+$sql = "SELECT id,name,bio,picture FROM ". SPEAKER_TABLE . " WHERE hideGallery = 0 ORDER BY name ASC";
 
 if ( $stmt->prepare($sql) )
 {
