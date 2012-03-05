@@ -45,29 +45,35 @@ if( $stmt->prepare($sql)){
 					if($day == 1) {
 						$reglist[$regid]['day1'] = true;
 						$daystat['day1']['trueincount']++; //true count, meaning how many times the button was actually pressed.
-						$stafflist[$checked_by]['d1in']++; //count how many checkin-outs by each staff
+						$staffstat[$checked_by]['d1in']++; //count how many checkin-outs by each staff
 					}
 					if($day == 2) {
 						$reglist[$regid]['day2'] = true;
 						$daystat['day2']['trueincount']++;
-						$stafflist[$checked_by]['d2in']++;
+						$staffstat[$checked_by]['d2in']++;
 					}
 				}
 				if($check_out_in == 0) { //checkout
 					if($day == 1) {
 						$reglist[$regid]['day1'] = false;
 						$daystat['day1']['trueoutcount']++;
-						$stafflist[$checked_by]['d1out']++;
+						$staffstat[$checked_by]['d1out']++;
 					}
 					if($day == 2) {
 						$reglist[$regid]['day2'] = false;
 						$daystat['day2']['trueoutcount']++;
-						$stafflist[$checked_by]['d2out']++;
+						$staffstat[$checked_by]['d2out']++;
 					}
 				}
 				$reglist[$regid]['staffid'] = $checked_by;
 				if($reglist[$regid]['day1'] || $reglist[$regid]['day2']) {
 					$reglist[$regid]['timein'] = $time_stamp; 
+				}
+				if(!$stafflist) {
+					$stafflist = array();
+				}
+				if(!in_array($checked_by, $stafflist)) {
+				$stafflist[] = $checked_by;
 				}
 			}
 	}
@@ -90,6 +96,7 @@ $regstat['regnum'] = count($reglist);
 
 if ( $regstat ) $smarty->assign('regstat', $regstat);
 if ( $stafflist ) $smarty->assign('stafflist', $stafflist);
+if ( $staffstat ) $smarty->assign('staffstat', $staffstat);
 if ( $daystat ) $smarty->assign('daystat', $daystat);
 if ( $success ) $smarty->assign('success', $success);
 if ( $error ) $smarty->assign('error', $error);

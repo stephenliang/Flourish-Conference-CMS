@@ -14,7 +14,10 @@
 		</table>
 		<h3>Checkin Staff Statistics:</h3>
 		<table id="staffstat">
-			
+			<tr><th>Staff ID</th><th>Day 1 Checkins</th><th>Day 1 Checkouts</th><th>Day 2 Checkins</th><th>Day 2 Checkouts</th></tr>
+			{foreach from=$stafflist key=k item=i}
+				<tr><td>{$i}</td><td>{$staffstat.$i.d1in}</td><td>{$staffstat.$i.d1out}</td><td>{$staffstat.$i.d2in}</td><td>{$staffstat.$i.d2out}</td></tr>
+			{/foreach}
 		</table>
 		
 		<div id="help" class="dialog" title="Help Information">
