@@ -36,26 +36,38 @@ else{
 	$error = "An error occurred retreiving registration list.";
 }
 //get checkin and checkout status for listing
-$sql = "SELECT regid, day, check_out_in FROM ". CHECKIN_TABLE;
+$sql = "SELECT regid, day, check_out_in, checked_by, time_stamp FROM ". CHECKIN_TABLE;
 if( $stmt->prepare($sql)){
 	if($stmt->execute()){
-		$stmt->bind_result($regid, $day, $check_out_in);
+		$stmt->bind_result($regid, $day, $check_out_in, $checked_by, $time_stamp);
 			while ($stmt->fetch()) {
-				if($check_out_in == 1) {
+				if($check_out_in == 1) { //checkin
 					if($day == 1) {
 						$reglist[$regid]['day1'] = true;
+						$daystat['day1']['trueincount']++; //true count, meaning how many times the button was actually pressed.
+						$stafflist[$checked_by]['d1in']++; //count how many checkin-outs by each staff
 					}
 					if($day == 2) {
 						$reglist[$regid]['day2'] = true;
+						$daystat['day2']['trueincount']++;
+						$stafflist[$checked_by]['d2in']++;
 					}
 				}
-				if($check_out_in == 0) {
+				if($check_out_in == 0) { //checkout
 					if($day == 1) {
 						$reglist[$regid]['day1'] = false;
+						$daystat['day1']['trueoutcount']++;
+						$stafflist[$checked_by]['d1out']++;
 					}
 					if($day == 2) {
 						$reglist[$regid]['day2'] = false;
+						$daystat['day2']['trueoutcount']++;
+						$stafflist[$checked_by]['d2out']++;
 					}
+				}
+				$reglist[$regid]['staffid'] = $checked_by;
+				if($reglist[$regid]['day1'] || $reglist[$regid]['day2']) {
+					$reglist[$regid]['timein'] = $time_stamp; 
 				}
 			}
 	}
@@ -63,10 +75,22 @@ if( $stmt->prepare($sql)){
 else{
 	$error = "An error occurred retrieving checkin status.". $stmt->error() .".";
 }
+//Count total checkins on each day
+foreach ($reglist as $value) {
+    if ($value['day1'] == true) {
+		$regstat['day1ct']++;
+	}
+	if ($value['day2'] == true) {
+		$regstat['day2ct']++;
+	}
+}
 //Find Number or registered people
 $regstat['regnum'] = count($reglist);
 
+
 if ( $regstat ) $smarty->assign('regstat', $regstat);
+if ( $stafflist ) $smarty->assign('stafflist', $stafflist);
+if ( $daystat ) $smarty->assign('daystat', $daystat);
 if ( $success ) $smarty->assign('success', $success);
 if ( $error ) $smarty->assign('error', $error);
 if ( $message ) $smarty->assign('message', $message);

@@ -19,7 +19,7 @@
 
 		<br />
 		<div id="menu">
-			{if $login}<span class="menu_item"><a href="javascript:void(0)">Help</a></span> | <span class="menu_item"><a href="./stats.php">Statistics</a></span> | <span class="menu_item"><a href="./logout.php">Logout</a></span>{else}<span class="menu_item"><a href="{#ROOT#}">Return to Main Site</a></span>{/if}
+			{if $login}<span class="menu_item"><a href="javascript:void(0)">Help</a></span> | <span class="menu_item"><a href="./checkin.php">Checkin</a></span> | <span class="menu_item"><a href="./stats.php">Statistics</a></span> | <span class="menu_item"><a href="./logout.php">Logout</a></span>{else}<span class="menu_item"><a href="{#ROOT#}">Return to Main Site</a></span>{/if}
 		</div>
 		
 		<br />

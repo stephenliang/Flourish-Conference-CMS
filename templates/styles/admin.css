@@ -208,15 +208,14 @@ tr{
 .tdc{
 	background: none repeat scroll 0 0 #EEFAFF;
     height: 3em;
-    position: absolute;
-    width: 300px;
+    max-width: 300px;
 }
 .formcl{
-	position: absolute;
+	float: left;
 	left: 0;
 }
 .formcr{
-	position: absolute;
+	float: right;
 	right: 0;
 }
 .tdc .submit{
@@ -224,6 +223,13 @@ tr{
 }
 .dialog {
 	display: none;
+}
+.regcomment {
+	display: none;
+}
+.regcomcell {
+	background-color: #FCECBD;
+	cursor: pointer;
 }
 #footer {
 	color: #AAAAAA;

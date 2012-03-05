@@ -7,7 +7,7 @@
 	<table>
 	<tr><th>ID</th><th>Name</th><th>email</th><th>T-Shirt Size</th><th>Wireless Username</th><th>Wireless Password</th><th>Comments</th><th></th></tr>
 	{foreach from=$reglist key=k item=i}
-	<tr class="result"><td>{$k}</td><td>{$i.name}</td><td>{$i.email}</td><td>{$i.tsize}</td><td>{$i.wifiuser}</td><td>{$i.wifipass}</td><td>{$i.comments}</td><td class="tdc"><div><form name="checkin1-{$k}" id="checkin1-{$k}" class="formcl" action="./checkin.php" method="post">
+	<tr class="result"><td>{$k}</td><td>{$i.name}</td><td>{$i.email}</td><td>{$i.tsize}</td><td>{$i.wifiuser}</td><td>{$i.wifipass}</td>{if $i.comments eq ''}<td></td>{else}<td class="regcomcell"><div class="regcomment">{$i.comments}</div></td>{/if}<td class="tdc"><div><form name="checkin1-{$k}" id="checkin1-{$k}" class="formcl" action="./checkin.php" method="post">
 	<p class="submit">
 		<input type="submit" name="submit" id="submit1-{$k}" class="{if $i.day1}button-secondary{else}button-primary{/if}" value="Day 1 {if $i.day1}Checkout{else}Checkin{/if}" />
 		<input type="hidden" name="day" value="1" />
@@ -28,9 +28,12 @@
 		<p><strong>Search</strong> - The search functionality allows you to quickly sort through the many registrants.  While the input box is focused, you may press the escape key on your keyboard to clear the search filter.  The search behaviour is a little different than what you may expect.  It searches each cell for each specific word. Words do not neccessarily have to be in the same cell to find a match.</p>
 		<p><strong>Day1&amp;2 Checkin&amp;Checkout</strong> - The blue buttons on the left allow you to check in a registrant.  Red buttons indicate that the registrant has already been checked in.</p>
 		<p>If you mistakenly click checkin on a registrant, just click on the corresponding red button to checkout.</p>
-		<p>If possible, please do not resubmit form data when refreshing.</p>
+		<p><strong>Other Functions</strong></p>
+		<p><strong>Comments</strong> - All registrant comments are hidden by default because they can be rather long. Just click on a registrant's cell to view the comment. Click again to hide. Comments are available only on cells with orange backgrounds.</p>
+		<p>Note: If you happen to refresh the screen and your browser happens to ask to resubmit data, it will not mess with the data if you resubmit. You can choose either.</p>
 	</div>
-	<div id="stats" class="dialog" title="Statistics Page">
-		<p>Sorry, but this page isn't finished quite yet. Check back next week.</p>
+	<div id="doublecheckin" class="dialog" title="Error! Double Checkin!">
+		<p>Sorry, but this registrant has already checked in on another day.</p>
+		<p>If you need this registrant checked-in on another day, then you much first check him/her out of the other day.</p>
 	</div>
 {include file="footer_admin.tpl"}

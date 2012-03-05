@@ -15,14 +15,10 @@ function filter(selector, query) {
 $(window).load(function () {
 	//default each row to visible  
 	$('tbody tr').fadeIn();
-	$('#help').dialog({ autoOpen: false }, { width: 500 }, {show: 'fade'}, { hide: 'explode' });
+	if ($('#doublecheckin')) {$('#help').dialog({ autoOpen: false }, { width: 500 }, {show: 'fade'}, { hide: 'explode' });}
+	if ($('#doublecheckin')) {$('#doublecheckin').dialog({ autoOpen: false }, { width: 500 }, {show: 'fade'}, { hide: 'explode' });}
 	$('#menu span.menu_item a').eq(0).click(function() {
 		$('#help').dialog('open');
-	});
-	$('#stats').dialog({ autoOpen: false }, {show: 'fade'}, { hide: 'explode' });
-	$('#menu span.menu_item a').eq(1).click(function(event) {
-		event.preventDefault();
-		$('#stats').dialog('open');
 	});
 
 	$('#search').keyup(function(event) {
@@ -41,4 +37,21 @@ $(window).load(function () {
 		filter('tbody tr.result', $(this).val());  
 	} 
 });
+
+//prevent double checkin
+$('input[id*="submit"]').click(function(me) {
+	if (($(this).val() == "Day 1 Checkin") && ($('input[id*="submit"]').eq($('input[id*="submit"]').index(this)+1).val() == "Day 2 Checkout")) {
+		me.preventDefault();
+		$('#doublecheckin').dialog('option', 'position', 'center');
+		$('#doublecheckin').dialog('open');
+	}
+	else if ($(this).val() == "Day 2 Checkin" && ($('input[id*="submit"]').eq($('input[id*="submit"]').index(this)-1).val() == "Day 1 Checkout")) {
+		me.preventDefault();
+		$('#doublecheckin').dialog('option', 'position', 'center');
+		$('#doublecheckin').dialog('open');
+	}
+});
+$('.regcomcell').click(function(){$('.regcomcell').eq($('.regcomcell').index(this)).children().slideToggle();});
+
+
 });

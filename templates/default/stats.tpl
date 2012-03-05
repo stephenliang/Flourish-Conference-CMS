@@ -3,9 +3,18 @@
 
 		<h1>Sorry, but this page isn't finished quite yet. Check back next week.</h1>
 		<h3>Quick Statistics:</h3>
-		<table id ="quickstat">
+		<table id="quickstat">
 			<tr><th>Number or Registrants</th><th>Checked-in on Day 1</th><th>Checked-in on Day 2</th></tr>
-			<tr><td>{$regstat.regnum}</td></tr>
+			<tr><td>{$regstat.regnum}</td><td>{if $regstat.day1ct}{$regstat.day1ct}{else}0{/if}</td><td>{if $regstat.day2ct}{$regstat.day2ct}{else}0{/if}</td></tr>
+		</table>
+		<table id="daystat">
+			<tr><th></th><th>True Checkin Clicks</th><th>True Checkout Clicks</th></tr>
+			<tr><td><strong>Day 1</strong></td><td>{$daystat.day1.trueincount}</td><td>{$daystat.day1.trueoutcount}</td></tr>
+			<tr><td><strong>Day 2</strong></td><td>{$daystat.day2.trueincount}</td><td>{$daystat.day2.trueoutcount}</td></tr>
+		</table>
+		<h3>Checkin Staff Statistics:</h3>
+		<table id="staffstat">
+			
 		</table>
 		
 		<div id="help" class="dialog" title="Help Information">
