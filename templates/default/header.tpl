@@ -41,7 +41,7 @@
 				<li><img src="{#ROOT#}/images/flourish-helpers/safc-black.png" alt="SAFC" /></li>
 				<li><a href="http://linuxjournal.com"><img src="{#ROOT#}/images/flourish-helpers/ljcolor.jpg" alt="Linux Journal" /></a></li>
 				<li><a href="http://cs.uic.edu"><img src="{#ROOT#}/images/flourish-helpers/csdepartment.png" alt="Department of Computer Science at UIC" /></a></li>
-				<li><a href="http://spantree.net"><img src="{#ROOT#}/images/flourish-helpers/spantree.png" alt="Spantree" /></a></li>
+				<li><a href="http://www.spantree.net"><img src="{#ROOT#}/images/flourish-helpers/spantree.png" alt="Spantree" /></a></li>
 			</li>
 
 			<span id="sponsor-us"><a href="{#ROOT#}/sponsorship_proposal.php">Sponsor Us!</a></span>
