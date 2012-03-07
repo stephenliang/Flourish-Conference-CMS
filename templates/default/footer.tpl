@@ -38,6 +38,11 @@
 			}(document, 'script', 'facebook-jssdk'));</script>
 		</div>
 		{/literal}
+	<br />
+	<div id="disclaimer">The statements, opinions, and ideas conveyed in this program do not necessarily express the position of the University of Illinois at Chicago.<br />
+
+If you have a disability and need an accommodation in order to participate in this event, please call (312) 413-5070 at least one week prior to the event.</div>
+
 	</div>
 
 	<!-- Piwik -->
@@ -54,6 +59,7 @@
 	</script><noscript><p><img src="http://www.flourishconf.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
 	<!-- End Piwik Tracking Code -->
 	{/literal}
+
 
 	</body>
 </html>
