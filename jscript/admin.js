@@ -2,7 +2,7 @@
 // Author: clee231
 // Description: Adds dynamic content to admin pages.
 
-setTimeout(function() { $(".success-box").fadeOut(3000); }, 1000);
+setTimeout(function() { $(".success-box").fadeOut(3000); }, 3000);
 
 function filter(selector, query) {  
   query =   $.trim(query); //trim white space  

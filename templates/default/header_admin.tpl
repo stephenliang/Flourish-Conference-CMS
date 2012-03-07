@@ -9,7 +9,7 @@
 		<script src="{#ROOT#}/jscript/jquery-1.7.1.min.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/tiny_mce/jquery.tinymce.js" type="text/javascript"></script>
-		{if $login || $success}<script src="{#ROOT#}/jscript/admin.js" type="text/javascript"></script>{/if}
+		{if $login || $success}<script src="{#ROOT#}/jscript/admin.js" type="text/javascript"></script><script src="{#ROOT#}/jscript/js-class.js" type="text/javascript"></script><script src="{#ROOT#}/jscript/bluff-min.js" type="text/javascript"></script><script src="{#ROOT#}/jscript/excanvas.js" type="text/javascript"></script>{/if}
 	</head>
 
 	<body>

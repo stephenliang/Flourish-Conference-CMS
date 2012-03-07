@@ -19,6 +19,16 @@
 				<tr><td>{$i}</td><td>{$staffstat.$i.d1in}</td><td>{$staffstat.$i.d1out}</td><td>{$staffstat.$i.d2in}</td><td>{$staffstat.$i.d2out}</td></tr>
 			{/foreach}
 		</table>
+		<canvas id="staffgraph" width="400" height="300"></canvas>
+		<script type="text/javascript">
+			var g = new Bluff.Bar('staffgraph', '400x300');
+			g.theme_odeo();
+			{foreach from=$stafflist key=k item=i}
+			g.data('{$i}in', '{$staffstat.$i.d1in}');
+			g.data('{$i}out', '{$staffstat.$i.d2in}');
+			{/foreach}
+			g.draw();
+		</script>
 		
 		<div id="help" class="dialog" title="Help Information">
 		<p>This is the Flourish 2012 Statistics page.  Here you will find some pretty cool statistics.  Here are the planned things so far.</p>
