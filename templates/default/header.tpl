@@ -38,7 +38,7 @@
 			<span>Sponsors</span>
 			<ul>
 				<li><a href="http://orbitz.com"><img src="{#ROOT#}/images/flourish-helpers/orbitz.png" alt="Orbitz" /></a></li>
-				<li><img src="{#ROOT#}/images/flourish-helpers/safc-black.png" alt="SAFC" /></li>
+				<li><a href="http://www.uic.edu/depts/chcc/programs/Campus/Files/SAFC.html"><img src="{#ROOT#}/images/flourish-helpers/safc-black.png" alt="SAFC" /></a></li>
 				<li><a href="http://linuxjournal.com"><img src="{#ROOT#}/images/flourish-helpers/ljcolor.jpg" alt="Linux Journal" /></a></li>
 				<li><a href="http://cs.uic.edu"><img src="{#ROOT#}/images/flourish-helpers/csdepartment.png" alt="Department of Computer Science at UIC" /></a></li>
 				<li><a href="http://www.spantree.net"><img src="{#ROOT#}/images/flourish-helpers/spantree.png" alt="Spantree" /></a></li>
