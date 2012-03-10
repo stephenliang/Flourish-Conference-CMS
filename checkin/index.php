@@ -4,7 +4,7 @@
 // Description: Admin login page
 define('SITE_PATH', '../');
 define('HACKFREE', 1);
-include (SITE_PATH."common.php");
+include (SITE_PATH."/checkin/common.php");
 
 //Start session
 session_start();

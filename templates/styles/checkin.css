@@ -73,7 +73,7 @@ tr{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	width: 70%;
+	width: 85%;
 }
 
 #logo{
@@ -231,7 +231,40 @@ tr{
 	background-color: #FCECBD;
 	cursor: pointer;
 }
+
+.hidden{
+	display: none;
+}
+
+#regtable{
+	width: 100%;
+}
+#qstat {
+	float: left;
+}
+#truestat {
+	float: none;
+}
+#d1staffcheckin {
+	float: left;
+}
+#d2staffcheckin {
+	float: right;
+}
+#checkinxtimes {
+	clear: both;
+}
+#checkinxtime1 {
+	float: right;
+}
+#checkinxtime2 {
+	float: right;
+}
+#dayxtimegraphbox {
+	float: left;
+}
 #footer {
+	clear: both;
 	color: #AAAAAA;
     font-size: 10px;
     margin: 0 auto;

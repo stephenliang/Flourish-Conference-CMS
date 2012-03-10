@@ -4,7 +4,7 @@
 // Description: The wonderful page about statistics and cool information!
 define('SITE_PATH', '../');
 define('HACKFREE', 1);
-include (SITE_PATH."common.php");
+include (SITE_PATH."checkin/common.php");
 //Start session
 session_start();
 
@@ -35,6 +35,9 @@ if( $stmt->prepare($sql)){
 else{
 	$error = "An error occurred retreiving registration list.";
 }
+if(!$stafflist) {
+	$stafflist = array(); // Create a list of staff member ids.
+}
 //get checkin and checkout status for listing
 $sql = "SELECT regid, day, check_out_in, checked_by, time_stamp FROM ". CHECKIN_TABLE;
 if( $stmt->prepare($sql)){
@@ -46,11 +49,15 @@ if( $stmt->prepare($sql)){
 						$reglist[$regid]['day1'] = true;
 						$daystat['day1']['trueincount']++; //true count, meaning how many times the button was actually pressed.
 						$staffstat[$checked_by]['d1in']++; //count how many checkin-outs by each staff
+						preg_match('/[1-2]?[0-9]:+/', $time_stamp, $hour); //regex matching the hour number in the following format: '2012-03-10 03:47:05'
+						$daytime1[substr($hour[0], 0, -1)]++; // Count the number of checkins on each day by hour. Trim colon from regex.
 					}
 					if($day == 2) {
 						$reglist[$regid]['day2'] = true;
 						$daystat['day2']['trueincount']++;
 						$staffstat[$checked_by]['d2in']++;
+						preg_match('/[1-2]?[0-9]:+/', $time_stamp, $hour);
+						$daytime2[substr($hour[0], 0, -1)]++;
 					}
 				}
 				if($check_out_in == 0) { //checkout
@@ -58,22 +65,23 @@ if( $stmt->prepare($sql)){
 						$reglist[$regid]['day1'] = false;
 						$daystat['day1']['trueoutcount']++;
 						$staffstat[$checked_by]['d1out']++;
+						preg_match('/[1-2]?[0-9]:+/', $time_stamp, $hour);
+						$daytime1[substr($hour[0], 0, -1)]--; //subtract checkout for accuracy
 					}
 					if($day == 2) {
 						$reglist[$regid]['day2'] = false;
 						$daystat['day2']['trueoutcount']++;
 						$staffstat[$checked_by]['d2out']++;
+						preg_match('/[1-2]?[0-9]:+/', $time_stamp, $hour);
+						$daytime2[substr($hour[0], 0, -1)]--; //Only thing that this does not account for is if a user checksin one hour and checksout in a different hour.
 					}
 				}
-				$reglist[$regid]['staffid'] = $checked_by;
+				$reglist[$regid]['staffid'] = $checked_by; //Set who checked in this registrant
 				if($reglist[$regid]['day1'] || $reglist[$regid]['day2']) {
-					$reglist[$regid]['timein'] = $time_stamp; 
-				}
-				if(!$stafflist) {
-					$stafflist = array();
+					$reglist[$regid]['timein'] = $time_stamp;  //and when this person was checkedin
 				}
 				if(!in_array($checked_by, $stafflist)) {
-				$stafflist[] = $checked_by;
+				$stafflist[] = $checked_by; // Create a list of staff member IDs
 				}
 			}
 	}
@@ -98,6 +106,8 @@ if ( $regstat ) $smarty->assign('regstat', $regstat);
 if ( $stafflist ) $smarty->assign('stafflist', $stafflist);
 if ( $staffstat ) $smarty->assign('staffstat', $staffstat);
 if ( $daystat ) $smarty->assign('daystat', $daystat);
+if ( $daytime1 ) $smarty->assign('daytime1', $daytime1);
+if ( $daytime2 ) $smarty->assign('daytime2', $daytime2);
 if ( $success ) $smarty->assign('success', $success);
 if ( $error ) $smarty->assign('error', $error);
 if ( $message ) $smarty->assign('message', $message);

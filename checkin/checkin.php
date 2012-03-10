@@ -4,19 +4,40 @@
 // Description: Checkin page
 define('SITE_PATH', '../');
 define('HACKFREE', 1);
-include (SITE_PATH."common.php");
+include (SITE_PATH."checkin/common.php");
 //Start session
 session_start();
 
 //Check whether the session variable SESS_USER_ID is present or not
 if(!isset($_SESSION['SESS_USER_ID']) || (trim($_SESSION['SESS_USER_ID']) == '') || (trim($_SESSION['SESS_USER_ID']) == 0)) {
-	die("Invalid credentials.");
+	die("Invalid credentials. If you believe this is an error, please verify you have cookies and javascript enabled.");
 }
 else{
 	$message = "You are currently logged in as: " .$_SESSION['SESS_FIRST_NAME']." " .$_SESSION['SESS_LAST_NAME']. " with user id " .$_SESSION['SESS_USER_ID']. ".";
 }
 
+
 if ($_POST['day'] && ($_POST['checkin_for'] || $_POST['checkout_for'])){
+	//Prevent double checkin or checkout
+	$stmt = $db->stmt_init();
+	if($_POST['checkin_for']){
+	$regs = $_POST['checkin_for'];
+	}
+	else{
+	$regs = $_POST['checkout_for'];
+	}
+	$sql = "SELECT regid, check_out_in FROM `". CHECKIN_TABLE ."` WHERE regid='". $regs . "' ORDER BY id DESC LIMIT 1";
+	if( $stmt->prepare($sql)){
+		if($stmt->execute()){
+		$stmt->bind_result($regid, $check_status);
+		$stmt->fetch();
+		if(($check_status == 1 && (isset($_POST['checkin_for']))) || ($check_status == 0 && (isset($_POST['checkout_for'])))) {
+			$error = "Resubmittion error.  If you refreshed the page, do not resubmit form data.";
+		}
+		}
+	}
+}
+if ($_POST['day'] && ($_POST['checkin_for'] || $_POST['checkout_for']) && (!$error)){	
 	//checkin and checkout block
 	$stmt = $db->stmt_init();
 	$sql = "INSERT INTO `" . CHECKIN_TABLE . "` (`regid` , `day` , `check_out_in`, `checked_by`) VALUES (?,?,?,?)";

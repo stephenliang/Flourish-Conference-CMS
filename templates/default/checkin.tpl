@@ -4,7 +4,7 @@
 	<label for="search">Search</label>
 	<input type="text" name="search" value="" id="search" />
 	<noscript>IMPORTANT: This section requires Javascript for search and dialog functionalities! Javascript it currently detected as disabled.</noscript>
-	<table>
+	<table id="regtable">
 	<tr><th>ID</th><th>Name</th><th>email</th><th>T-Shirt Size</th><th>Wireless Username</th><th>Wireless Password</th><th>Comments</th><th></th></tr>
 	{foreach from=$reglist key=k item=i}
 	<tr class="result"><td>{$k}</td><td>{$i.name}</td><td>{$i.email}</td><td>{$i.tsize}</td><td>{$i.wifiuser}</td><td>{$i.wifipass}</td>{if $i.comments eq ''}<td></td>{else}<td class="regcomcell"><div class="regcomment">{$i.comments}</div></td>{/if}<td class="tdc"><div><form name="checkin1-{$k}" id="checkin1-{$k}" class="formcl" action="./checkin.php" method="post">
@@ -30,7 +30,7 @@
 		<p>If you mistakenly click checkin on a registrant, just click on the corresponding red button to checkout.</p>
 		<p><strong>Other Functions</strong></p>
 		<p><strong>Comments</strong> - All registrant comments are hidden by default because they can be rather long. Just click on a registrant's cell to view the comment. Click again to hide. Comments are available only on cells with orange backgrounds.</p>
-		<p>Note: If you happen to refresh the screen and your browser happens to ask to resubmit data, it will not mess with the data if you resubmit. You can choose either.</p>
+		<p>Note: If you happen to refresh the screen and your browser happens to ask to resubmit data, please try to NOT submit.</p>
 	</div>
 	<div id="doublecheckin" class="dialog" title="Error! Double Checkin!">
 		<p>Sorry, but this registrant has already checked in on another day.</p>
