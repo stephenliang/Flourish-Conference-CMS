@@ -16,5 +16,5 @@
 	</p>
 
 </form>
-
+<p style="text-align:center;">This website section requires Cookies and Javascript enabled to work properly.</p>
 {include file="footer_admin.tpl"}
