@@ -255,13 +255,13 @@ tr{
 	clear: both;
 }
 #checkinxtime1 {
-	float: right;
+	float: left;
 }
 #checkinxtime2 {
-	float: right;
+	float: left;
 }
 #dayxtimegraphbox {
-	float: left;
+	float: right;
 }
 #footer {
 	clear: both;
