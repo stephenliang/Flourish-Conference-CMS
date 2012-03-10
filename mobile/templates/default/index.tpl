@@ -17,10 +17,10 @@
 		</div>
         <ul data-role="listview" data-inset="true" data-filter="false">
 
-                <li><a href="{#ROOT#}/registration.php">Registration</a></li>
-                <li><a href="{#ROOT#}/sponsor.php">Sponsor</a></li>
-                <li><a href="{#ROOT#}/mini-expo.php">Mini-Expo</a></li>
-                <li><a href="{#ROOT#}/about.php">About</a></li>
+                <li><a href="registration.php">Registration</a></li>
+                <li><a href="sponsor.php">Sponsor</a></li>
+                <li><a href="mini-expo.php">Mini-Expo</a></li>
+                <li><a href="about.php">About</a></li>
                 <li><a href="#pastevents">Past Events</a></li>
 
         </ul><!-- /listview  sitenav-->
@@ -30,6 +30,7 @@
 <div data-role="page" id="pastevents">
         <div data-role="header">
                 <h1>Past Events</h1>
+		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
         <div data-role="content">
 		<ul data-role="listview" data-inset="true" data-theme="a" data-split-theme="a">

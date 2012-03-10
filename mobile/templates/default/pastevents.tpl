@@ -3,6 +3,7 @@
 <div data-role="page">
         <div data-role="header">
                 <h1>Past Events</h1>
+		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
 	<div data-role="content">
 		<ul data-role="listview" data-inset="true">

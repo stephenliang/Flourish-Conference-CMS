@@ -3,8 +3,8 @@
 <div data-role="page">
 
         <div data-role="header">
-		<a href="{#ROOT#}" data-role="button" data-icon="delete" class="ui-btn-left" data-direction="reverse" data-theme="a">Cancel</a>
                 <h1>Registration</h1>
+		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
 
         <div data-role="content">

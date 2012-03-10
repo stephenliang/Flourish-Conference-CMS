@@ -1,8 +1,8 @@
 {config_load file=default.conf section=$site}
 {include file="header.tpl" title="Sponsorship Proposal"}
         <div data-role="header">
-		<a href="{#ROOT#}" data-role="button" data-icon="delete" class="ui-btn-left" data-direction="reverse" data-theme="a">Cancel</a>
                 <h1>Sponsorship Proposal</h1>
+		<a href="./" data-role="button" data-icon="delete" class="ui-btn-left" data-direction="reverse" data-theme="a">Cancel</a>
         </div><!-- /header -->
         <div data-role="content">
 		{if $message}

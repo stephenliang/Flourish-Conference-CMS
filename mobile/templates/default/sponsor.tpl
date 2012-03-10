@@ -2,6 +2,7 @@
 {include file="header.tpl" title="Sponsorship Information"}
         <div data-role="header">
                 <h1>Sponsorship Information</h1>
+		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
         <div data-role="content">
 		<div data-role="collapsible-set">
