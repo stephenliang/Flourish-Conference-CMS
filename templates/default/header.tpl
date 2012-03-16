@@ -42,6 +42,9 @@
 				<li><a href="http://linuxjournal.com"><img src="{#ROOT#}/images/flourish-helpers/ljcolor.jpg" alt="Linux Journal" /></a></li>
 				<li><a href="http://cs.uic.edu"><img src="{#ROOT#}/images/flourish-helpers/csdepartment.png" alt="Department of Computer Science at UIC" /></a></li>
 				<li><a href="http://www.spantree.net"><img src="{#ROOT#}/images/flourish-helpers/spantree.png" alt="Spantree" /></a></li>
+				<li><a href="http://www.dotomi.com"><img src="{#ROOT#}/images/flourish-helpers/dotomi.jpg" alt="dotomi" /></a></li>
+				<li><a href="http://www.nextag.com"><img src="{#ROOT#}/images/flourish-helpers/nextag.gif" alt="nextag" /></a></li>
+				<li><a href="http://www.linux-magazine.com"><img src="{#ROOT#}/images/flourish-helpers/linux-magazine.jpg" alt="Linux Magazine" /></a></li>
 			</li>
 
 			<span id="sponsor-us"><a href="{#ROOT#}/sponsorship_proposal.php">Sponsor Us!</a></span>
