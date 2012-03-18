@@ -6,7 +6,10 @@ $ext = '.tpl'; // Required for template files.
 define('SPEAKER_PROPOSAL_TABLE', "speaker_proposal_table");
 define('SPEAKER_TABLE', "f12_speaker_table");
 define('TALKS_TABLE', "f12_talks_table");
+define('USER_TABLE', "members");
 define('REGISTRATION_TABLE', "f12_registration_table");
+define('CHECKIN_TABLE',"checkin");
+define('WIRELESS_TABLE',"wireless");
 define('CONTACT_EMAIL', "info@flourishconf.com");
 //recaptcha private key in config.php
 
