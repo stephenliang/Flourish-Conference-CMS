@@ -46,6 +46,8 @@
 				<li><a href="http://www.dotomi.com"><img src="{#ROOT#}/images/flourish-helpers/dotomi.jpg" alt="dotomi" /></a></li>
 				<li><a href="http://www.nextag.com"><img src="{#ROOT#}/images/flourish-helpers/nextag.gif" alt="nextag" /></a></li>
 				<li><a href="http://www.linux-magazine.com"><img src="{#ROOT#}/images/flourish-helpers/linux-magazine.jpg" alt="Linux Magazine" /></a></li>
+				<li><a href="http://www.bullcitymobile.com"><img src="{#ROOT#}/images/flourish-helpers/bcm-redblack.png" alt="Bull City Mobile" /></a></li>
+				<li><a href="http://www.illinoistech.org"><img src="{#ROOT#}/images/flourish-helpers/ita.png" alt="Illinois Technology Association" /></a></li>
 			</li>
 
 			<span id="sponsor-us"><a href="{#ROOT#}/sponsorship_proposal.php">Sponsor Us!</a></span>
