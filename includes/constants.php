@@ -1,9 +1,11 @@
 <?php
-define('ROOT', 'http://www.flourishconf.com/2012');
+define('ROOT', 'http://www.flourishconf.com/2012-test');
 
 $ext = '.tpl'; // Required for template files.
 
 define('SPEAKER_PROPOSAL_TABLE', "speaker_proposal_table");
+define('SPEAKER_TABLE', "f12_speaker_table");
+define('TALKS_TABLE', "f12_talks_table");
 define('REGISTRATION_TABLE', "f12_registration_table");
 define('CONTACT_EMAIL', "info@flourishconf.com");
 //recaptcha private key in config.php

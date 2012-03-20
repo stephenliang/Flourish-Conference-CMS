@@ -20,69 +20,71 @@
 				<p>We've included a guide of what you can expect with your donation along with this document. If you have questions or concerns, please contact Stephen Liang, the Flourish Lead Organizer, by email at <a href="mailto:stephen@flourishconf.com?Subject=Flourish%202012%20Sponsorship%20Information">stephen@flourishconf.com</a>.</p>
 				
 			</div>
-			<div data-role="collapsible" data-collapsed="true">
+			<div data-role="collapsible" data-collapsed="true" data-theme="a">
 				<h2>What do I get with my donation?</h2>
 				<p>We're glad you asked.  First of all, you will receive the gratitude and goodwill of the open source community, UIC students, and that warm fuzzy feeling that you've done something really really good.  But, of course, it doesn't stop there as we offer the following perks based on the amount of your generous donation.</p>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h2>Bronze Level ($150 - $500)</h2>
+				<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Bronze Level ($150 - $500)</h2>
 
-				<ul>
-					<li>Logo is featured on the Flourish website</li>
-					<li>You get a table on the conference mini expo floor to represent your organization</li>
-					<li>Logo appears on conference program book in the back</li>
-				</ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h2>Silver Level ($500 - $1000)</h2>
+					<ul>
+						<li>Logo is featured on the Flourish website</li>
+						<li>You get a table on the conference mini expo floor to represent your organization</li>
+						<li>Logo appears on conference program book in the back</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Silver Level ($500 - $1000)</h2>
 
-				<ul>
-					<li>Logo is featured on the Flourish website</li>
-					<li>You get a table on the conference mini expo floor to represent your organization</li>
-					<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
-				</ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h2>Gold Level ($1000 - $2000)</h2>
-				<ul>
-					<li>Logo is featured on the Flourish website</li>
-					<li>You get a table on the conference mini expo floor to represent your organization</li>
-					<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
-					<li>Approved material is placed at the registration table to be distributed to all attendees</li>
-					<li>Half page advertisement in our program book</li>
+					<ul>
+						<li>Logo is featured on the Flourish website</li>
+						<li>You get a table on the conference mini expo floor to represent your organization</li>
+						<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Gold Level ($1000 - $2000)</h2>
+					<ul>
+						<li>Logo is featured on the Flourish website</li>
+						<li>You get a table on the conference mini expo floor to represent your organization</li>
+						<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
+						<li>Approved material is placed at the registration table to be distributed to all attendees</li>
+						<li>Half page advertisement in our program book</li>
 
-				</ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h2>Platinum Level ($2000 - $3000)</h2>
-				<ul>
-					<li>Logo is featured on the Flourish website</li>
-					<li>You get a table on the conference mini expo floor to represent your organization</li>
-					<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Platinum Level ($2000 - $3000)</h2>
+					<ul>
+						<li>Logo is featured on the Flourish website</li>
+						<li>You get a table on the conference mini expo floor to represent your organization</li>
+						<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
 
-					<li>Approved material is placed at the registration table to be distributed to all attendees</li>
-					<li>Half page advertisement in our program book</li>
-					<li>A part of the conference will be sponsored by your company (For example, Lunch sponsored by [company])</li>
-				</ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h2>Diamond Level ($3000 and up)</h2>
-				<ul>
-					<li>Logo is featured on the Flourish website</li>
+						<li>Approved material is placed at the registration table to be distributed to all attendees</li>
+						<li>Half page advertisement in our program book</li>
+						<li>A part of the conference will be sponsored by your company (For example, Lunch sponsored by [company])</li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Diamond Level ($3000 and up)</h2>
+					<ul>
+						<li>Logo is featured on the Flourish website</li>
 
-					<li>You get a table on the conference mini expo floor to represent your organization</li>
-					<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
-					<li>Approved material is placed at the registration table to be distributed to all attendees</li>
-					<li>Full page advertisement in our program book</li>
-					<li>A part of the conference will be sponsored by your company (For example, Lunch sponsored by [company])</li>
-					<li>Larger logo than lower sponsorship levels on all promotional material</li>
+						<li>You get a table on the conference mini expo floor to represent your organization</li>
+						<li>Your name and logo appear on all flyers, posters, t-shirts and any other promotional material</li>
+						<li>Approved material is placed at the registration table to be distributed to all attendees</li>
+						<li>Full page advertisement in our program book</li>
+						<li>A part of the conference will be sponsored by your company (For example, Lunch sponsored by [company])</li>
+						<li>Larger logo than lower sponsorship levels on all promotional material</li>
 
-				</ul>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h2>Other...</h2>
-				<p>We will be happy to work with you in devising any "substitute" promotions if you find it in your company's best interest.</p>
-			</div>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Other...</h2>
+					<p>We will be happy to work with you in devising any "substitute" promotions if you find it in your company's best interest.</p>
+				</div>
+				</div><!-- /collapsible-set details -->
+			</div> <!-- sponsor details div -->
 		</div><!-- /collapsible-set -->
 		<a href="{#ROOT#}/sponsorship_proposal.php" data-role="button" data-theme="e">Submit a Proposal</a>
 	</div><!-- /content -->

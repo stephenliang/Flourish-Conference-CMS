@@ -1,51 +1,54 @@
 body {
-				font-family: Verdana, Arial, Helvetica, sans-serif;
-			}
-			
-			.content {
-				border-radius: 15px;	
-				margin: auto;
-				padding: 15px 36px;
-				border: 1px solid #000;
-			}
-			
-			
-			
-			#menu {
-				text-align: center;
-				font-size: 12pt;
-				line-height: 200%;
-			}
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 
-			.menu_item {
-				padding: 0px 5px;
-			}
-			
-			#footer {
-				height: 70px;
-				margin-top: -10px;
-				text-align: center;
-			}
-			#logo {
-				text-align: center;
-			}
+.content {
+	border-radius: 15px;	
+	margin: auto;
+	padding: 15px 36px;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+
+#content-container {
+	overflow: hidden;
+}
+
+#menu {
+	text-align: center;
+	font-size: 12pt;
+	line-height: 200%;
+}
+
+.menu_item {
+	padding: 0px 5px;
+}
+
+#footer {
+	height: 70px;
+	margin-top: -10px;
+	text-align: center;
+}
+#logo {
+	text-align: center;
+}
+
+a {
+	color: #3A4C7D;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0E1939;
+}
 
 #logo img {
-	border-style: none;
 }
 
 .message-box {
 	border-bottom: 1px dashed #000;
 }
 
-tr , td {
-	vertical-align: top;
-	border-top: 1px solid gray;
-}
-
-td {
-	padding: 5px;
-}
 .content-title {
 	text-align: center;
 }
@@ -85,7 +88,7 @@ textarea {
 #main-container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 80%;
 }
 
 #social-container {
@@ -101,45 +104,40 @@ textarea {
 }
 
 #google {
-	position: absolute;
-	top: 20px;
-	
-	z-index: -1;
+	margin-top: 10px;
+	display: inline-block;
 }
 
 #facebook {
-	position: absolute;
-	left: 85px;
-	top: 18px;
-	z-index: -1;
+	display: inline-block;
 }
 	
-.twitter-button-large {
-	position: absolute;
-	left: 175px;
-	top: 18px;
-	z-index: -1;
-}
-
-.twitter-button-small {
-	position: absolute;
-	left: 14px;
-	top: 42px;
-	z-index: -1;
-}
-
-#twitter {
-	font-size: 10pt;
-	margin: 0px auto;
-	width: 50%;
-}
-
-.tweet {
+#flourish-helpers {
+	width: 180px;
+	float: right;
+	padding: 10px;
 	border: 1px solid #000;
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 7px;
-	width: 100%;
+	border-radius: 15px;
+	margin-left: 25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+#flourish-helpers li{
+	margin-bottom: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+#flourish-helpers ul {
+	margin: 0;
+	padding: 0;
+}
+
+#flourish-helpers ul img {
+	max-width: 180px;
+	max-height: 70px;
 }
 
 .right-img {
@@ -205,9 +203,10 @@ img {
 }
 
 #logo img {
-	width: 100%;
+	width: 50%;
+	max-height: 236px;
+	border-style: none;
 	max-width: 800px;
-	height: 286px;
 }
 
 .big-button {
@@ -295,4 +294,129 @@ iframe {
 	margin: 0;
 	padding: 0px;
 	overflow: hidden;
+}
+
+.speaker-div {
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	border: 2px solid #333;
+	background-color: #DCDCDC;
+}
+
+.speaker-div img {
+	width: 150px;
+	height: 200px;
+}
+
+.speaker-item {
+	list-style: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.speaker-photo {
+	width: 10%;
+}
+
+.speaker-name {
+	width: 144px;
+	border-top: 2px solid #333;
+	font-size: 10pt;
+	padding: 3px;
+}
+
+.gallery {
+	max-width: 640px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.speaker-info {
+	min-width: 405px;
+	word-wrap: break-word;
+	border: 1px solid #000;
+	padding: 10px;
+	margin-left: 15px;
+	border-radius: 15px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.schedule thead {
+	background-color: #E6EEEE;
+}
+
+.schedule .time{
+	width: 13%;
+	border-right: 1px dotted #ccc;
+	border-left: 1px solid #000;
+	padding: 10px;
+}
+
+.schedule .talk-details-a {
+	text-align: center;
+	width: 44%;
+	border-right: 1px solid #000;
+}
+
+.schedule .talk-details-both {
+	text-align: center;
+	border-right: 1px solid #000;
+	width: 88%;
+}
+
+.schedule .talk-details-b {
+	text-align: center;
+	border-right: 1px solid #000;
+	width: 44%;
+}
+
+.schedule .presenter {
+	margin: 5px;
+}
+
+.schedule .talk-location {
+	font-style: italic;
+}
+
+.schedule td {
+	padding: 5px;
+	margin: 0;
+}
+
+.schedule tbody td {
+	background-color: #FFF;
+}
+
+.schedule {
+	width: 100%;
+	font-size: 0.8em;
+	border: none;
+}
+
+.schedule tbody {
+	border-top: none;
+}
+
+.schedule tbody .first {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.schedule tbody .other {
+	border-bottom: 1px solid #000;
+}
+
+#sponsor-us {
+	font-size: 10pt;
+	margin-bottom: 0;
+}
+
+#disclaimer {
+	font-size: 8pt;
+	text-align: center;
 }
