@@ -52,11 +52,9 @@ if ( $_GET['viewMobileSite'] == 1 )
 if ( $browser['ismobiledevice'] == 1 || $_COOKIE['viewFullSite'] == 0 ) {
 	$browser['ismobiledevice'] = 1;
 	$smarty->assign('mobileDevice', 1);
-  	$smarty->assign('site', "mobile");
 	$smarty->template_dir = SITE_PATH.'templates/mobile';
 	$smarty ->compile_dir = SITE_PATH."templates_c/mobile";
-} else {
-	$smarty->assign('site', "default");
 }
+$smarty->assign('site', "default");
 $smarty->assign('showBar', $_COOKIE['show-bar']);
 ?>
