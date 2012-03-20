@@ -47,9 +47,9 @@ if ( $_GET['viewFullSite'] == 1 )
 }
 if ( $_GET['viewMobileSite'] == 1 )
 {
-	$_COOKIE['viewFullSite'] = 0;
+	$_COOKIE['viewFullSite'] = 2;
 }
-if ( $browser['ismobiledevice'] == 1 || $_COOKIE['viewFullSite'] == 0 ) {
+if ( $browser['ismobiledevice'] == 1 || $_COOKIE['viewFullSite'] == 2 ) {
 	$browser['ismobiledevice'] = 1;
 	$smarty->assign('mobileDevice', 1);
 	$smarty->template_dir = SITE_PATH.'templates/mobile';
