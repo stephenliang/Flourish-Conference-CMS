@@ -1,6 +1,6 @@
 {config_load file='default.conf' section=$site}
 {include file="header.tpl" title="Registration"}
-<div data-role="page">
+<div data-role="page" data-add-back-btn="true">
 
         <div data-role="header">
                 <h1>Registration</h1>

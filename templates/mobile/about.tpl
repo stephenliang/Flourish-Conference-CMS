@@ -1,5 +1,6 @@
 {config_load file=default.conf section=$site}
 {include file="header.tpl" title="About Flourish"}
+<div data-role="page" id="about" data-add-back-btn="true">
         <div data-role="header">
                 <h1>About Flourish!</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>

@@ -1,6 +1,6 @@
 {config_load file=default.conf section=$site}
 {include file="header.tpl" title="Schedule"}
-<div data-role="page" id="roomA">
+<div data-role="page" id="roomA" data-add-back-btn="true">
         <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
