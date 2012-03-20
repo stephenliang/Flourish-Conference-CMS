@@ -85,10 +85,6 @@
 				<label for="textarea-1">Comments:</label>
 				<textarea name="comments" id="textarea-1" value=""></textarea>
 			</div>	
-			<div data-role="fieldcontain">
-			<p>Enter recaptcha code</p>
-			{$recaptcha}
-			</div>	
 		<input type="submit" name="submit" value="Submit" />
 		</form>
 

@@ -1,5 +1,6 @@
 {config_load file=default.conf section=$site}
 {include file="header.tpl" title="Speakers"}
+<div data-role="page" id="speaker">
         <div data-role="header">
                 <h1>Speakers</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>

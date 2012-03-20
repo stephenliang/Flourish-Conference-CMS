@@ -71,10 +71,6 @@
 			</div>	
 
 			</div>	
-			<div data-role="fieldcontain">
-			<p>Enter recaptcha code</p>
-			{$recaptcha}
-			</div>	
 		<input type="submit" name="submit" value="Submit" data-theme="e" />
 		</form>
 		</div>

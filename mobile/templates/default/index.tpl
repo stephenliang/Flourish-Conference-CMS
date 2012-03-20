@@ -25,16 +25,17 @@
                 <li><a href="registration.php">Registration</a></li>
                 <li><a href="speakers.php">Speakers</a></li>
                 <li><a href="schedule.php" data-ajax="false">Schedule</a></li>
-                <li><a href="sponsor.php">Sponsor</a></li>
-                <li><a href="mini-expo.php">Mini-Expo</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="#pastevents">Past Events</a></li>
+                <li><a href="miniexpo.php" data-ajax="true">Mini-Expo</a></li>
+                <li><a href="about.php" data-ajax="true">About</a></li>
+                <li><a href="#pastevents" data-ajax="true">Past Events</a></li>
+                <li><a href="#sponsored" data-ajax="true">Sponsors</a></li>
 
         </ul><!-- /listview  sitenav-->
+	<a href="index.php?viewFullSite=1" data-role="button" rel="external" data-theme="a">Switch to Full Site</a>
 
         </div><!-- /content -->
 </div><!-- page -->
-<div data-role="page" id="pastevents">
+<div data-role="page" id="pastevents"  data-add-back-btn="true">
         <div data-role="header">
                 <h1>Past Events</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
@@ -46,6 +47,27 @@
 			<li><a href="/flourish2009">2009</a></li>
 			<li><a href="/flourish2008">2008</a></li>
 			<li><a href="/index2007.php">2007</a></li>
+		</ul>
+	</div>
+</div><!-- page -->
+<div data-role="page" id="sponsored" data-add-back-btn="true">
+        <div data-role="header">
+                <h1>Sponsored by:</h1>
+		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+        </div><!-- /header -->
+        <div data-role="content">
+		<ul data-theme="d" data-role="listview" data-filter="true">
+			<li><a href="http://fused.com/" rel="external"><img src="images/flourish-helpers/fused.png"/>Fused</a></li>
+			<li><a href="http://www.orbitz.com/" rel="external"><img src="images/flourish-helpers/orbitz.png"/>Orbitz</a></li>
+			<li><a href="http://www.uic.edu/depts/chcc/programs/Campus/Files/SAFC.html" rel="external"><img src="images/flourish-helpers/safc-black.png"/>SAFC</a></li>
+			<li><a href="http://linuxjournal.com/" rel="external"><img src="images/flourish-helpers/ljcolor.jpg"/>Linux Journal</a></li>
+			<li><a href="http://cs.uic.edu/" rel="external"><img src="images/flourish-helpers/csdepartment.png"/>UIC CS Department</a></li>
+			<li><a href="http://www.spantree.net/" rel="external"><img src="images/flourish-helpers/spantree.png"/>Spantree</a></li>
+			<li><a href="http://www.dotomi.com/" rel="external"><img src="images/flourish-helpers/dotomi.jpg"/>Dotomi</a></li>
+			<li><a href="http://www.nextag.com/" rel="external"><img src="images/flourish-helpers/nextag.gif"/>Nextag</a></li>
+			<li><a href="http://www.linux-magazine.com/" rel="external"><img src="images/flourish-helpers/linux-magazine.jpg"/>Linux Pro Magazine</a></li>
+			<li><a href="http://bullcitymobile.com/" rel="external"><img src="images/flourish-helpers/bcm-redblack.png" />BullCity Mobile</a></li>
+			<li><a href="http://illinoistech.org/" rel="external"><img src="images/flourish-helpers/ita.png" />ITA</a></li>
 		</ul>
 	</div>
 </div><!-- page -->
