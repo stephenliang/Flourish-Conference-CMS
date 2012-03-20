@@ -1,0 +1,55 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Main</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/favicon.gif" rel="shortcut icon">
+		<link rel=stylesheet href="/Flourish-Conference-CMS/jscript/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css">
+                <script src="/Flourish-Conference-CMS/jscript/jquery-1.7.1.min.js" type="text/javascript"></script>
+                <script src="/Flourish-Conference-CMS/jscript/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		<body>
+<div data-role="page">
+
+        <div data-role="header">
+                <h1>Flourish! Conference 2012</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">
+		<div data-role="collapsible" collapsed="false">
+				<h3>Introduction</h3>
+				<p>Welcome to the Flourish 2012 Open Source Conference website! This is Flourish Conference's <strong>sixth</strong> annual student-led conference hosted at the <a href="http://uic.edu" ref="external">The University of Illinois at Chicago</a>. We are proud to help promote the use of open source and provide a gathering place for open source enthusiasts in the Chicagoland area.</p>
+				<p>Throughout the weekend, we will bring speakers from around the country to talk about their contributions to the open source community. Topics ranging from the development of free and open source software to the issues with software patents and copyright will be discussed. Then after all the speeches are over, join us in our workshop to gain some hands-on experience.</p>
+				<p>Flourish Conference is <strong>FREE</strong> to attend and there will be free T-Shirts to those who register in advance. We really appreciate everyone for coming to Flourish Conference for the past several years and we hope to bring another great and educating year!</p>
+				<p>In the mean time, follow <a href="http://twitter.com/flourishconf" ref="external">@flourishconf</a> for updates and check our website regularly!</p>
+				</p>
+		</div>
+        <ul data-role="listview" data-inset="true" data-filter="false">
+
+                <li><a href="/Flourish-Conference-CMS/registration.php">Registration</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">Mini-Expo</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Past Events</a></li>
+
+        </ul><!-- /listview  sitenav-->
+
+        </div><!-- /content -->
+</div><!-- page -->
+	</body>
+</html>
+<script type="text/javascript">
+// <![CDATA[
+    if ( self.name == '' ) {
+       var title = 'Console';
+    }
+    else {
+       var title = 'Console_' + self.name;
+    }
+    _smarty_console = window.open("",title.value,"width=680,height=600,resizable,scrollbars=yes");
+    _smarty_console.document.write('<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <title>Smarty Debug Console<\/title>\n\n<style type=\"text/css\">\n/* <![CDATA[ */\nbody, h1, h2, td, th, p {\n    font-family: sans-serif;\n    font-weight: normal;\n    font-size: 0.9em;\n    margin: 1px;\n    padding: 0;\n}\n\nh1 {\n    margin: 0;\n    text-align: left;\n    padding: 2px;\n    background-color: #f0c040;\n    color:  black;\n    font-weight: bold;\n    font-size: 1.2em;\n }\n\nh2 {\n    background-color: #9B410E;\n    color: white;\n    text-align: left;\n    font-weight: bold;\n    padding: 2px;\n    border-top: 1px solid black;\n}\n\nbody {\n    background: black; \n}\n\np, table, div {\n    background: #f0ead8;\n} \n\np {\n    margin: 0;\n    font-style: italic;\n    text-align: center;\n}\n\ntable {\n    width: 100%;\n}\n\nth, td {\n    font-family: monospace;\n    vertical-align: top;\n    text-align: left;\n    width: 50%;\n}\n\ntd {\n    color: green;\n}\n\n.odd {\n    background-color: #eeeeee;\n}\n\n.even {\n    background-color: #fafafa;\n}\n\n.exectime {\n    font-size: 0.8em;\n    font-style: italic;\n}\n\n#table_assigned_vars th {\n    color: blue;\n}\n\n#table_config_vars th {\n    color: maroon;\n}\n/* ]]> */\n<\/style>\n\n<\/head>\n<body>\n\n<h1>Smarty Debug Console<\/h1>\n\n<h2>included templates &amp; config files (load time in seconds)<\/h2>\n\n<div>\n        <font color=brown>\n        index.tpl<\/font>\n            <span class=\"exectime\">\n        (0.52359)\n        (total)        <\/span>\n        <br />\n        <font color=green>\n        default.conf [mobile] global<\/font>\n            <span class=\"exectime\">\n        (0.02501)\n                <\/span>\n        <br />\n    &nbsp;&nbsp;&nbsp;    <font color=brown>\n        header.tpl<\/font>\n            <span class=\"exectime\">\n        (0.09156)\n                <\/span>\n        <br />\n    &nbsp;&nbsp;&nbsp;    <font color=green>\n        default.conf [mobile] global<\/font>\n            <span class=\"exectime\">\n        (0.02723)\n                <\/span>\n        <br />\n    &nbsp;&nbsp;&nbsp;    <font color=brown>\n        footer.tpl<\/font>\n            <span class=\"exectime\">\n        (0.02747)\n                <\/span>\n        <br />\n<\/div>\n\n<h2>assigned template variables<\/h2>\n\n<table id=\"table_assigned_vars\">\n            <tr class=\"odd\">\n            <th>{$SCRIPT_NAME}<\/th>\n            <td>&quot;/Flourish-Conference-CMS/index.php&quot;<\/td><\/tr>\n            <tr class=\"even\">\n            <th>{$mobileDevice}<\/th>\n            <td>1<\/td><\/tr>\n            <tr class=\"odd\">\n            <th>{$showBar}<\/th>\n            <td>1<\/td><\/tr>\n            <tr class=\"even\">\n            <th>{$site}<\/th>\n            <td>&quot;mobile&quot;<\/td><\/tr>\n    <\/table>\n\n<h2>assigned config file variables (outer template scope)<\/h2>\n\n<table id=\"table_config_vars\">\n            <tr class=\"odd\">\n            <th>{#files#}<\/th>\n            <td><b>Array (1)<\/b><br><b>default.conf<\/b> =&gt; <i>true<\/i><\/td><\/tr>\n            <tr class=\"even\">\n            <th>{#vars#}<\/th>\n            <td><b>Array (2)<\/b><br><b>sitename<\/b> =&gt; &quot;Flourish! 2012&quot;<br><b>ROOT<\/b> =&gt; &quot;/Flourish-Conference-CMS&quot;<\/td><\/tr>\n    <\/table>\n<\/body>\n<\/html>\n');
+    _smarty_console.document.close();
+// ]]>
+</script>
