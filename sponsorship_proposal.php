@@ -6,11 +6,13 @@ include (SITE_PATH."common.php");
 
 if ( $_POST )
 {
-	$recaptcha_response = recaptcha_check_answer( RECAPTCHA_PRIVATE_KEY, $_SERVER['REMOTE_ADDR'],  $_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]);
+	if ($browser['ismobiledevice'] != 1) {
+		$recaptcha_response = recaptcha_check_answer( RECAPTCHA_PRIVATE_KEY, $_SERVER['REMOTE_ADDR'],  $_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]);
 
-	if ( !$recaptcha_response->is_valid )
-	{
-		$error = "The recaptcha code that you entered is not valid";
+		if ( !$recaptcha_response->is_valid )
+		{
+			$error = "The recaptcha code that you entered is not valid";
+		}
 	}
 
 	if ( !$_POST['name'] ) $error = "Please enter your name";

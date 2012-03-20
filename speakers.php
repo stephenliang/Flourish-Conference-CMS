@@ -20,6 +20,7 @@ if ( $stmt->prepare($sql) )
 
 }
 
+
 $stmt->close();
 $smarty->assign('speakers', $speakers);
 
