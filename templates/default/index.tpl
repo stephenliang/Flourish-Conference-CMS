@@ -5,7 +5,6 @@
 <script type="text/javascript" src="{#ROOT#}/jscript/jflickr.js"></script>
 <script type="text/javascript" src="{#ROOT#}/jscript/index.js"></script>
 		
-		<h1 class="content-title">Welcome to Flourish! Open Source Conference 2012!</h1>
 		<div class="essay">
 				<div id="notice">Registration for Flourish 2012 has now been opened! Please visit the <a href="{#ROOT#}/registration.php">registration page</a> to register for the conference. Please remember that only the attendees that register in advance will be guaranteed a free T-Shirt!</div>
 				<span class="right-gallery-img"><span id="cycle"></span></span>
