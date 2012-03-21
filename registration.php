@@ -71,10 +71,8 @@ $smarty->assign('POST', $_POST);
 //We reached end, parse and end
 include (SITE_PATH."footer.php");
 if ( $success ) {
-	echo "loading thanks";
 	$smarty->display('thanks.tpl');
 } else {
-	echo "Error: ".$stmt->error;
 	$smarty->display('registration.tpl');
 }
 //We're out of here.

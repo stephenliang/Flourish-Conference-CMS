@@ -6,7 +6,7 @@
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
 	<div data-role="navbar" data-position="fixed">
 		<ul>
-			<li><a href="#roomA" class="ui-btn-active ui-state-persist" data-ajax="true">A</a></li>
+			<li><a href="#roomA" class="ui-btn-active" data-ajax="true">A</a></li>
 			<li><a href="#roomB" data-ajax="true">B</a></li>
 			<li><a href="#roomC" data-ajax="true">C</a></li>
 			<li><a href="#other" data-ajax="true">Other</a></li>

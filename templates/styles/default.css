@@ -1,13 +1,14 @@
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-family: sans-serif;
+	font-size: 1em;
 }
 
 .content {
 	margin: auto;
-	padding: 15px 36px;
+	padding: 15px 0px 15px 15px;
 	border-top: 1px solid #000;
 	overflow: hidden;
+	font-size: 0.8em;
 }
 
 #content-container {
@@ -15,10 +16,9 @@ body {
 }
 
 #menu {
-	text-align: right;
+	text-align: left;
 	font-size: 11pt;
 	line-height: 90%;
-	margin-right: 194px;
 }
 
 .menu_item {
@@ -31,19 +31,36 @@ body {
 	text-align: center;
 }
 #logo {
-	width:294px;
+	width: 70%;
+}
+
+#logo img {
+	width: 300px;
+	height: 108px;
 }
 
 #logo-header {
 	width:100%;
 }
-#tagline {
-	width:50%;
-	text-align:right;
-	vertical-align: bottom;
+
+#logo-container {
+	overflow: hidden;
+	position: relative;
 }
+
+#tagline {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+#tagline img {
+	width: 300px;
+	height: 26px;
+}
+
 a {
-	color: darkGray;
+	color: #3A4C7D;
 	text-decoration: none;
 }
 
@@ -57,7 +74,7 @@ a:hover {
 
 .content-title {
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 2em;
 }
 .sponsors-title {
 	text-align: center;
@@ -99,7 +116,7 @@ textarea {
 #main-container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 70%;
 }
 
 #social-container {
@@ -124,11 +141,10 @@ textarea {
 }
 	
 #flourish-helpers {
-	width: 152px;
+	width: 250px;
 	float: right;
-	padding: 10px;
+	padding: 10px 10px 0px 0px;
 	border-top: 1px solid #000;
-	margin-left: 25px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.25em;
@@ -147,7 +163,7 @@ textarea {
 
 #flourish-helpers ul img {
 	max-width: 152px;
-	max-height: 70px;
+	height: auto;
 }
 
 .right-img {
@@ -213,18 +229,9 @@ img {
 }
 
 #logo img {
-	width: 50%;
-	max-height: 108px;
 	border-style: none;
-	max-width: 300px;
 }
 
-#tagline img {
-	width: 50%;
-	max-height: 26px;
-	border-style: none;
-	max-width: 300px;
-}
 .big-button {
 	height: 100px;
 	width: 300px;
@@ -409,7 +416,6 @@ iframe {
 
 .schedule {
 	width: 100%;
-	font-size: 0.9em;
 	border: none;
 }
 
