@@ -1,14 +1,14 @@
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-family: sans-serif;
+	font-size: 1em;
 }
 
 .content {
-	border-radius: 15px;	
 	margin: auto;
-	padding: 15px 36px;
-	border: 1px solid #000;
+	padding: 15px 0px 15px 15px;
+	border-top: 1px solid #000;
 	overflow: hidden;
+	font-size: 0.8em;
 }
 
 #content-container {
@@ -16,9 +16,9 @@ body {
 }
 
 #menu {
-	text-align: center;
-	font-size: 12pt;
-	line-height: 200%;
+	text-align: left;
+	font-size: 11pt;
+	line-height: 90%;
 }
 
 .menu_item {
@@ -31,7 +31,32 @@ body {
 	text-align: center;
 }
 #logo {
-	text-align: center;
+	width: 70%;
+}
+
+#logo img {
+	width: 300px;
+	height: 108px;
+}
+
+#logo-header {
+	width:100%;
+}
+
+#logo-container {
+	overflow: hidden;
+	position: relative;
+}
+
+#tagline {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+#tagline img {
+	width: 300px;
+	height: 26px;
 }
 
 a {
@@ -43,15 +68,17 @@ a:hover {
 	color: #0E1939;
 }
 
-#logo img {
-}
-
 .message-box {
 	border-bottom: 1px dashed #000;
 }
 
 .content-title {
 	text-align: center;
+	font-size: 2em;
+}
+.sponsors-title {
+	text-align: center;
+	font-size: 0.7em;
 }
 
 input[type=text] {
@@ -89,7 +116,7 @@ textarea {
 #main-container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 70%;
 }
 
 #social-container {
@@ -114,15 +141,13 @@ textarea {
 }
 	
 #flourish-helpers {
-	width: 180px;
+	width: 250px;
 	float: right;
-	padding: 10px;
-	border: 1px solid #000;
-	border-radius: 15px;
-	margin-left: 25px;
+	padding: 10px 10px 0px 0px;
+	border-top: 1px solid #000;
 	text-align: center;
 	font-weight: bold;
-	font-size: 18pt;
+	font-size: 1.25em;
 }
 
 #flourish-helpers li{
@@ -137,8 +162,8 @@ textarea {
 }
 
 #flourish-helpers ul img {
-	max-width: 180px;
-	max-height: 70px;
+	max-width: 152px;
+	height: auto;
 }
 
 .right-img {
@@ -204,10 +229,7 @@ img {
 }
 
 #logo img {
-	width: 50%;
-	max-height: 236px;
 	border-style: none;
-	max-width: 800px;
 }
 
 .big-button {
@@ -271,7 +293,6 @@ img {
 }
 
 #notice {
-	border: 1px solid #389E28;
 	background-color: #DFF5CE;
 	margin-bottom: 20px;
 	padding: 10px;
@@ -395,7 +416,6 @@ iframe {
 
 .schedule {
 	width: 100%;
-	font-size: 0.9em;
 	border: none;
 }
 
