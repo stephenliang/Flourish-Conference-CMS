@@ -4,10 +4,9 @@ body {
 }
 
 .content {
-	border-radius: 15px;	
 	margin: auto;
 	padding: 15px 36px;
-	border: 1px solid #000;
+	border-top: 1px solid #000;
 	overflow: hidden;
 }
 
@@ -16,9 +15,10 @@ body {
 }
 
 #menu {
-	text-align: center;
-	font-size: 12pt;
-	line-height: 200%;
+	text-align: right;
+	font-size: 11pt;
+	line-height: 90%;
+	margin-right: 194px;
 }
 
 .menu_item {
@@ -31,19 +31,24 @@ body {
 	text-align: center;
 }
 #logo {
-	text-align: center;
+	width:294px;
 }
 
+#logo-header {
+	width:100%;
+}
+#tagline {
+	width:50%;
+	text-align:right;
+	vertical-align: bottom;
+}
 a {
-	color: #3A4C7D;
+	color: darkGray;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #0E1939;
-}
-
-#logo img {
 }
 
 .message-box {
@@ -52,6 +57,11 @@ a:hover {
 
 .content-title {
 	text-align: center;
+	font-size: 1.25em;
+}
+.sponsors-title {
+	text-align: center;
+	font-size: 0.7em;
 }
 
 input[type=text] {
@@ -114,15 +124,14 @@ textarea {
 }
 	
 #flourish-helpers {
-	width: 180px;
+	width: 152px;
 	float: right;
 	padding: 10px;
-	border: 1px solid #000;
-	border-radius: 15px;
+	border-top: 1px solid #000;
 	margin-left: 25px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 18pt;
+	font-size: 1.25em;
 }
 
 #flourish-helpers li{
@@ -137,7 +146,7 @@ textarea {
 }
 
 #flourish-helpers ul img {
-	max-width: 180px;
+	max-width: 152px;
 	max-height: 70px;
 }
 
@@ -205,11 +214,17 @@ img {
 
 #logo img {
 	width: 50%;
-	max-height: 236px;
+	max-height: 108px;
 	border-style: none;
-	max-width: 800px;
+	max-width: 300px;
 }
 
+#tagline img {
+	width: 50%;
+	max-height: 26px;
+	border-style: none;
+	max-width: 300px;
+}
 .big-button {
 	height: 100px;
 	width: 300px;
@@ -271,7 +286,6 @@ img {
 }
 
 #notice {
-	border: 1px solid #389E28;
 	background-color: #DFF5CE;
 	margin-bottom: 20px;
 	padding: 10px;
