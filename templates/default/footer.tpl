@@ -5,7 +5,8 @@
 		<br />
 		</div>
 		<div id="footer">
-		<a href="/2011">2011</a> | <a href="/flourish2010">2010</a> | <a href="/flourish2009">2009</a> | <a href="/flourish2008">2008</a> | <a href="/index2007.php">2007</a><br />
+		<a href="/2011">2011</a> | <a href="/flourish2010">2010</a> | <a href="/flourish2009">2009</a> | <a href="/flourish2008">2008</a> | <a href="/index2007.php">2007</a><br /><br />
+		<a href="{#ROOT#}/index.php?viewMobileSite=1">View Mobile Site</a><br />
 		{literal}
 		<div id="google">
 			<!-- Place this render call where appropriate -->
