@@ -18,6 +18,7 @@ if ( $stmt->prepare($sql) )
 	$current_minute = 0;
 	$i = 0;
 	$j = 0;
+	$fri_max_tracks = 0;
 
 	while ( $row = $result->fetch_assoc())
 	{
@@ -34,6 +35,8 @@ if ( $stmt->prepare($sql) )
 		}else{
 			$j++;
 		}
+
+		if ( $j > $fri_max_tracks ) $fri_max_tracks = $j;
 
 		$talksFri[$i][$j] = $row;
 
@@ -56,6 +59,7 @@ if ( $stmt->prepare($sql) )
 	$current_minute = 0;
 	$i = 0;
 	$j = 0;
+	$sat_max_tracks = 0;
 
 	while ( $row = $result->fetch_assoc())
 	{
@@ -73,6 +77,8 @@ if ( $stmt->prepare($sql) )
 			$j++;
 		}
 
+		if ( $j > $sat_max_tracks ) $sat_max_tracks = $j;
+
 		$talksSat[$i][$j] = $row;
 
 		$current_hour = $hour;
@@ -83,6 +89,8 @@ if ( $stmt->prepare($sql) )
 $stmt->close();
 $smarty->assign('talksFri', $talksFri);
 $smarty->assign('talksSat', $talksSat);
+$smarty->assign('satTracks', $sat_max_tracks+1);
+$smarty->assign('friTracks', $fri_max_tracks+1);
 
 //We reached end, parse and end
 include (SITE_PATH."footer.php");
