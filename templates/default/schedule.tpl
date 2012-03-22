@@ -8,7 +8,7 @@
 			<div class="schedule-container">
 				{foreach from=$talksFri key=k item=timeAry}
 				<div class="schedule-hour-container">
-					<span class="time" id="Saturday_{$timeAry.0.hour}"><span>{$timeAry.0.start_time}</span></span>
+					<span class="time" id="Friday_{$timeAry.0.hour}"><span>{$timeAry.0.start_time}</span></span>
 					{assign var=count value=$timeAry|@count}
 					<span class="talk-details-a{if $k == 1} first{else} other{/if} tracks_{$count}">
 						<span>
