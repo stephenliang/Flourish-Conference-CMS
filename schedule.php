@@ -69,6 +69,8 @@ if ( $stmt->prepare($sql) )
 		$row['end_time'] = date("g:i A", $row['end_time']);
 		$row['hour'] = $hour;
 
+
+
 		if ( $hour != $current_hour || $minute != $current_minute )
 		{
 			$i++;
@@ -79,7 +81,13 @@ if ( $stmt->prepare($sql) )
 
 		if ( $j > $sat_max_tracks ) $sat_max_tracks = $j;
 
-		$talksSat[$i][$j] = $row;
+		//This is a hack for flourish 2012.. perhaps change it later?
+		if ( $row['location'] == "Illinois A" || $row['name'] == "" || $row['name'] == "Chris McAvoy" )
+			$talksSat[$i][0] = $row;
+		elseif ( $row['location'] == "Illinois B" || $row['location'] == "White Oak Room" )
+			$talksSat[$i][1] = $row;
+		else
+			$talksSat[$i][2] = $row;
 
 		$current_hour = $hour;
 		$current_minute = $minute;
