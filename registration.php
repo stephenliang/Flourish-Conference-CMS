@@ -21,9 +21,8 @@ if ( $_POST )
 	if ( !$_POST['student'] ) $error = "Please enter whether you are a UIC student or not";
 	if ( $_POST['size'] != "small" && $_POST['size'] != "medium" && $_POST['size'] != "large" && $_POST['size'] != "xl" && $_POST['size'] != "xxl" && $_POST['size'] != "xxxl" && $_POST['size'] != "" ) $error = "Please enter a proper T-Shirt size";
 	if ( $_POST['student'] != "yes" && $_POST['student'] != "no" ) $error = "Please enter a proper student status";
-	if ( $_POST['size'] == "small" ) $error = "We're sorry, we have run out of T-Shirts in the small size";
-	if ( $_POST['size'] == "medium" ) $error = "We're sorry, we have run out of T-Shirts in the medium size";
-	if ( $_POST['size'] == "xxl" ) $error = "We're sorry, we have run out of T-Shirts in the xxl size";
+
+	if ( !strstr( $_POST['email'], "@") ) $error = "Please enter a valid email address";
 
 	$stmt = $db->stmt_init();
 
