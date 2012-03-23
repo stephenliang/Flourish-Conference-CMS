@@ -5,7 +5,7 @@
 			<div class="message-box">
 				<p>
 					Registration is now open for the public to sign up for Flourish! Open Source Conference 2012. We are happy to have you come to the conference and we hope that you will have a good time. Flourish Confrence is a <strong>free</strong> and open to the public conference. We encourage you to bring friends, family, and co-workers to our conference.</p>
-				<p><strong>Note</strong>: We have a limited supply of T-Shirts available and therefore, only those who register in advance are guaranteed a T-Shirt.</p>
+				<p><strong>T-Shirt Availability Notice</strong>: We have run out of T-Shirts in certain sizes. You can still indicate your T-Shirt size but you will be placed on a wait list. If nobody claims a T-Shirt in your size by Saturday Afternoon (12:00pm), you can pick one up at the registration table.</p>
 				<p><strong>Disability Notice</strong>: If you need special accommodations due to a disability, please email <a href="mailto:info@flourishconf.com">info@flourishconf.com</a> to let us know and we will try our best to ensure you have the best experience at Flourish Conference.</p>
 
 			</div>
@@ -22,11 +22,12 @@
 				<br /><br />
 				
 				<strong>T-Shirt Size (optional)</strong>:<br />
-				<input type="radio" name="size" value="small" {if $POST.size == "small"}checked{/if}> Small <br />
-				<input type="radio" name="size" value="medium" {if $POST.size == "medium"}checked{/if}> Medium<br />
+				<input type="radio" name="size" value="small" {if $POST.size == "small"}checked{/if}> Small (Waitlist)<br />
+				<input type="radio" name="size" value="medium" {if $POST.size == "medium"}checked{/if}> Medium (Waitlist)<br />
 				<input type="radio" name="size" value="large" {if $POST.size == "large"}checked{/if}> Large<br />
-				<input type="radio" name="size" value="xl" {if $POST.size == "xl"}checked{/if}> XL<br />
-				<input type="radio" name="size" value="xxl" {if $POST.size == "xxl"}checked{/if}> XXL<br />
+				<input type="radio" name="size" value="xl" disabled {if $POST.size == "xl"}checked{/if}> XL<br />
+				<input type="radio" name="size" value="xxl" {if $POST.size == "xxl"}checked{/if}> XXL (Waitlist)<br />
+				<input type="radio" name="size" value="xxxl" {if $POST.size == "xxxl"}checked{/if}> XXXL<br />
 				<br /><br />
 
 				<strong>Are you bringing a laptop? (optional)</strong>:<br />
