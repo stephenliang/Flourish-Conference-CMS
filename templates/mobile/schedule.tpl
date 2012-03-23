@@ -254,7 +254,7 @@
 			<li  data-role="list-divider" >Friday, 03/30/2012</li>
 		{foreach from=$talksFri key=k item=timeAry}
 			{assign var=count value=$timeAry|@count}
-			{if $timeAry.0.location == "Cardinal Room" OR $timeAry.0.location == "Bowling Alley"}
+			{if $timeAry.0.location == "Cardinal Room" OR $timeAry.0.location == "Bowling Alley" OR $timeAry.0.location == "White Oak Room"}
 			<li>
 				{if $timeAry.0.name != ""} <a data-ajax="true" href="speaker_details.php?id={$timeAry.0.speaker}"> {/if}
 				<h3>{$timeAry.0.talkTitle}</h3>
@@ -262,7 +262,7 @@
 				<p>{$timeAry.0.name}</p>
 				</a>
 			</li>
-			{elseif $timeAry.1.location == "Cardinal Room" OR $timeAry.1.location == "Bowling Alley"}
+			{elseif $timeAry.1.location == "Cardinal Room" OR $timeAry.1.location == "Bowling Alley" OR $timeAry.0.location == "White Oak Room"}
 			<li>
 				{if $timeAry.1.name != ""}<a data-ajax="true" href="speaker_details.php?id={$timeAry.1.speaker}"> {/if}
 				<h3>{$timeAry.1.talkTitle}</h3>
@@ -275,7 +275,7 @@
 		<li  data-role="list-divider">Saturday, 03/31/2012</li>
 		{foreach from=$talksSat key=k item=timeAry}
 			{assign var=count value=$timeAry|@count}
-			{if $timeAry.0.location == "Cardinal Room" OR $timeAry.0.location == "Bowling Alley"}
+			{if $timeAry.0.location == "Cardinal Room" OR $timeAry.0.location == "Bowling Alley" OR $timeAry.0.location == "White Oak Room"}
 			<li>
 				{if $timeAry.0.name != ""}<a data-ajax="true" href="speaker_details.php?id={$timeAry.0.speaker}"> {/if}
 				<h3>{$timeAry.0.talkTitle}</h3>

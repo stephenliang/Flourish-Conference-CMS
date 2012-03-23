@@ -55,17 +55,17 @@
         </div><!-- /header -->
         <div data-role="content">
 		<ul data-theme="d" data-role="listview" data-filter="true">
-			<li><a href="http://fused.com/" rel="external"><img src="images/flourish-helpers/fused.png"/>Fused</a></li>
-			<li><a href="http://www.orbitz.com/" rel="external"><img src="images/flourish-helpers/orbitz.png"/>Orbitz</a></li>
-			<li><a href="http://www.uic.edu/depts/chcc/programs/Campus/Files/SAFC.html" rel="external"><img src="images/flourish-helpers/safc-black.png"/>SAFC</a></li>
-			<li><a href="http://linuxjournal.com/" rel="external"><img src="images/flourish-helpers/ljcolor.jpg"/>Linux Journal</a></li>
-			<li><a href="http://cs.uic.edu/" rel="external"><img src="images/flourish-helpers/csdepartment.png"/>UIC CS Department</a></li>
-			<li><a href="http://www.spantree.net/" rel="external"><img src="images/flourish-helpers/spantree.png"/>Spantree</a></li>
-			<li><a href="http://www.dotomi.com/" rel="external"><img src="images/flourish-helpers/dotomi.jpg"/>Dotomi</a></li>
-			<li><a href="http://www.nextag.com/" rel="external"><img src="images/flourish-helpers/nextag.gif"/>Nextag</a></li>
-			<li><a href="http://www.linux-magazine.com/" rel="external"><img src="images/flourish-helpers/linux-magazine.jpg"/>Linux Pro Magazine</a></li>
-			<li><a href="http://bullcitymobile.com/" rel="external"><img src="images/flourish-helpers/bcm-redblack.png" />BullCity Mobile</a></li>
-			<li><a href="http://illinoistech.org/" rel="external"><img src="images/flourish-helpers/ita.png" />ITA</a></li>
+			<li><a href="http://fused.com/" rel="external"><img src="images/flourish-helpers/fused.png"/></a></li>
+			<li><a href="http://www.orbitz.com/" rel="external"><img src="images/flourish-helpers/orbitz.png"/></a></li>
+			<li><a href="http://www.uic.edu/depts/chcc/programs/Campus/Files/SAFC.html" rel="external"><img src="images/flourish-helpers/safc-black.png"/></a></li>
+			<li><a href="http://linuxjournal.com/" rel="external"><img src="images/flourish-helpers/ljcolor.jpg"/></a></li>
+			<li><a href="http://cs.uic.edu/" rel="external"><img src="images/flourish-helpers/csdepartment.png"/></a></li>
+			<li><a href="http://www.spantree.net/" rel="external"><img src="images/flourish-helpers/spantree.png"/></a></li>
+			<li><a href="http://www.dotomi.com/" rel="external"><img src="images/flourish-helpers/dotomi.jpg"/></a></li>
+			<li><a href="http://www.nextag.com/" rel="external"><img src="images/flourish-helpers/nextag.gif"/></a></li>
+			<li><a href="http://www.linux-magazine.com/" rel="external"><img src="images/flourish-helpers/linux-magazine.jpg"/></a></li>
+			<li><a href="http://bullcitymobile.com/" rel="external"><img src="images/flourish-helpers/bcm-redblack.png" /></a></li>
+			<li><a href="http://illinoistech.org/" rel="external"><img src="images/flourish-helpers/ita.png" /></a></li>
 		</ul>
 	</div>
 </div><!-- page -->
