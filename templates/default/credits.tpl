@@ -22,30 +22,30 @@
 		Mitchell Theys - Student Advisor<br />
 <br />
 		<h2>Volunteers:</h2>
-		Ashley Riley<br />
 		Alex Slawniak<br />
-		Jeanine Storbeck<br />
-		Gary Turovsky<br />
-		Walter Dworak<br />
-		Daniel Uber<br />
-		Sean Deitz<br />
-		David Chadwell<br />
-		Marcos Alzati<br />
-		Shiva Balara<br />
-		Joseph Rodriguez<br />
-		Gus Richardson<br />
-		Greg Neumarke<br />
 		Andrew Sennebogen<br />
-		Sruti Bhagavatula<br />
+		Ashley Riley<br />
+		Avinash Kunaparaju<br />
 		Brett Heinkel<br />
+		Calin Lupas <br />
+		Daniel Keasler<br />
+		Daniel Uber<br />
+		David Chadwell<br />
 		Garrett Padera<br />
+		Gary Turovsky<br />
+		Greg Neumarke<br />
+		Gus Richardson<br />
+		Jeanine Storbeck<br />
+		Joel Luellwitz - Community Liaison, Speaker Contact<br />
+		Joseph Rodriguez<br />
+		Joshua Herman - Speaker Contact<br />
+		Marcos Alzati<br />
 		Matthew Kurowski<br />
 		Sami Siddiqui<br />
-		Daniel Keasler<br />
-		Avinash Kunaparaju<br />
-		Calin Lupas <br />
-		Joshua Herman - Speaker Contact<br />
-		Joel Luellwitz - Community Liaison, Speaker Contact<br />
+		Sean Deitz<br />
+		Shiva Balara<br />
+		Sruti Bhagavatula<br />
+		Walter Dworak<br />
 		</div>
 	<div style="clear: both;"></div>
 
