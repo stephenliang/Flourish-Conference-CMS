@@ -27,6 +27,7 @@
                 <li><a href="about.php" data-ajax="true">About</a></li>
                 <li><a href="#pastevents" data-ajax="true">Past Events</a></li>
                 <li><a href="#sponsored" data-ajax="true">Sponsors</a></li>
+                <li><a href="#credits" data-ajax="true">Credits</a></li>
 
         </ul><!-- /listview  sitenav-->
 	<a href="index.php?viewFullSite=1" data-role="button" rel="external" data-theme="a">Switch to Full Site</a>
@@ -69,4 +70,58 @@
 		</ul>
 	</div>
 </div><!-- page -->
+<div data-role="page" id="credits" data-add-back-btn="true">
+        <div data-role="header">
+                <h1>Credits</h1>
+		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+        </div><!-- /header -->
+        <div data-role="content">
+		<div data-role="collapsible" data-collapsed="false">
+			<h3>Organizers and Support Staff</h3>
+			<p>
+				Stephen Liang - Co-chair, Desktop Web Administrator<br />
+				Aisha Halim - Co-chair, Mobile Web Administrator<br />
+				Leticia Gomes - Graphic Design<br />
+				Chase Lee - Web Developer<br />
+				Carl Karsten - Video Recording, Speaker Contact<br />
+				Samir Faci - Community Liaison, Speaker Contact<br />
+				Roberto Serrano - Speaker Contact<br />
+				Beth Lynn Eicher - Speaker Contact<br />
+				Walter Dworak - Technical Support, System Administrator<br />
+				Phil Gomes - Community Liaison<br />
+				Mitchell Theys - Student Advisor<br />
+			</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="false">
+			<h3>Volunteers</h3>
+			<p>
+				Alex Slawniak<br />
+				Andrew Sennebogen<br />
+				Ashley Riley<br />
+				Avinash Kunaparaju<br />
+				Brett Heinkel<br />
+				Calin Lupas <br />
+				Daniel Keasler<br />
+				Daniel Uber<br />
+				David Chadwell<br />
+				Garrett Padera<br />
+				Gary Turovsky<br />
+				Greg Neumarke<br />
+				Gus Richardson<br />
+				Jeanine Storbeck<br />
+				Joel Luellwitz - Community Liaison, Speaker Contact<br />
+				Joseph Rodriguez<br />
+				Joshua Herman - Speaker Contact<br />
+				Marcos Alzati<br />
+				Matthew Kurowski<br />
+				Sami Siddiqui<br />
+				Sean Deitz<br />
+				Shiva Balara<br />
+				Sruti Bhagavatula<br />
+				Walter Dworak<br />
+			</p>
+		</div>
+	</div>
+</div><!-- page -->
+
 {include file="footer.tpl" title="Main"}
