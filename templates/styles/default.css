@@ -116,7 +116,7 @@ textarea {
 #main-container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 80%;
 }
 
 #social-container {
@@ -141,13 +141,14 @@ textarea {
 }
 	
 #flourish-helpers {
-	width: 250px;
+	width: 20%;
 	float: right;
 	padding: 10px 10px 0px 0px;
 	border-top: 1px solid #000;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.25em;
+	margin-left: 20px;
 }
 
 #flourish-helpers li{
@@ -162,7 +163,8 @@ textarea {
 }
 
 #flourish-helpers ul img {
-	max-width: 152px;
+	width: 100%;
+	max-width: 150px;
 	height: auto;
 }
 
@@ -177,8 +179,8 @@ textarea {
 	float: right;
 	margin-left: 20px;
 	margin-bottom: 10px;
-	height: 325px;
-	width: 300px;
+	height: 200px;
+	width: 255px;
 	overflow: hidden;
 	display: none;
 	border: 5px solid #ccc;
@@ -373,7 +375,7 @@ iframe {
 }
 
 .schedule-hour-container {
-	height: 90px;
+	height: 95px;
 	border-top: 1px solid #000;
 	font-size: 10pt;
 }
@@ -453,7 +455,6 @@ iframe {
 }
 
 .schedule-hour-container .presenter {
-	margin: 5px;
 }
 
 .schedule .talk-location {
