@@ -17,11 +17,8 @@
 		Samir Faci - Community Liaison, Speaker Contact<br />
 		Roberto Serrano - Speaker Contact<br />
 		Beth Lynn Eicher - Speaker Contact<br />
-		Joshua Herman - Speaker Contact<br />
-		Joel Luellwitz - Community Liaison, Speaker Contact<br />
 		Walter Dworak - Technical Support, System Administrator<br />
 		Phil Gomes - Community Liaison<br />
-
 		Mitchell Theys - Student Advisor<br />
 <br />
 		<h2>Volunteers:</h2>
@@ -46,7 +43,9 @@
 		Sami Siddiqui<br />
 		Daniel Keasler<br />
 		Avinash Kunaparaju<br />
-		Calin Lupas 
+		Calin Lupas <br />
+		Joshua Herman - Speaker Contact<br />
+		Joel Luellwitz - Community Liaison, Speaker Contact<br />
 		</div>
 	<div style="clear: both;"></div>
 
