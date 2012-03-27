@@ -148,7 +148,7 @@
         </div><!-- /footer -->
 </div><!-- page -->
 <div data-role="page" id="other">
-        <div data-role="header" data-id="nav" data-position="fixed">
+        <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
