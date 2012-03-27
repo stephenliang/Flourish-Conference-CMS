@@ -4,15 +4,15 @@
         <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+        </div><!-- /header -->
 	<div data-role="navbar" data-position="fixed">
 		<ul>
-			<li><a href="#roomA" class="ui-btn-active" data-ajax="true">A</a></li>
-			<li><a href="#roomB" data-ajax="true">B</a></li>
-			<li><a href="#roomC" data-ajax="true">C</a></li>
-			<li><a href="#other" data-ajax="true">Other</a></li>
+			<li><a href="#roomA" class="ui-btn-active" >A</a></li>
+			<li><a href="#roomB" >B</a></li>
+			<li><a href="#roomC" >C</a></li>
+			<li><a href="#other" >Other</a></li>
 		</ul>
 	</div><!-- nav -->
-        </div><!-- /header -->
         <div data-role="content">
 		<ul data-role="listview">
 			<li  data-role="list-divider" >Friday, 03/30/2012</li>
@@ -51,15 +51,15 @@
         <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+        </div><!-- /header -->
 	<div data-role="navbar" data-position="fixed">
 		<ul>
-			<li><a href="#roomA" data-ajax="true">A</a></li>
-			<li><a href="#roomB" class="ui-btn-active ui-state-persist" data-ajax="true">B</a></li>
-			<li><a href="#roomC" data-ajax="true">C</a></li>
-			<li><a href="#other" data-ajax="true">Other</a></li>
+			<li><a href="#roomA" >A</a></li>
+			<li><a href="#roomB" class="ui-btn-active ui-state-persist" >B</a></li>
+			<li><a href="#roomC" >C</a></li>
+			<li><a href="#other" >Other</a></li>
 		</ul>
 	</div>
-        </div><!-- /header -->
         <div data-role="content">
 		<ul data-role="listview">
 			<li data-role="list-divider" >Friday, 03/30/2012</li>
@@ -98,15 +98,15 @@
         <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+        </div><!-- /header -->
 	<div data-role="navbar" data-position="fixed">
 		<ul>
-			<li><a href="#roomA" data-ajax="true">A</a></li>
-			<li><a href="#roomB" data-ajax="true">B</a></li>
-			<li><a href="#roomC" class="ui-btn-active ui-state-persist" data-ajax="true">C</a></li>
-			<li><a href="#other" data-ajax="true">Other</a></li>
+			<li><a href="#roomA" >A</a></li>
+			<li><a href="#roomB" >B</a></li>
+			<li><a href="#roomC" class="ui-btn-active ui-state-persist" >C</a></li>
+			<li><a href="#other" >Other</a></li>
 		</ul>
 	</div><!-- nav -->
-        </div><!-- /header -->
         <div data-role="content">
 		<ul data-role="listview">
 			<li  data-role="list-divider" >Friday, 03/30/2012</li>
@@ -145,15 +145,15 @@
         <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+        </div><!-- /header -->
 	<div data-role="navbar" data-position="fixed">
 		<ul>
-			<li><a href="#roomA" data-ajax="true">A</a></li>
-			<li><a href="#roomB" data-ajax="true">B</a></li>
-			<li><a href="#roomC" data-ajax="true">C</a></li>
-			<li><a href="#other" class="ui-btn-active ui-state-persist" data-ajax="true">Other</a></li>
+			<li><a href="#roomA" >A</a></li>
+			<li><a href="#roomB" >B</a></li>
+			<li><a href="#roomC" >C</a></li>
+			<li><a href="#other" class="ui-btn-active ui-state-persist" >Other</a></li>
 		</ul>
 	</div><!-- nav -->
-        </div><!-- /header -->
         <div data-role="content">
 		<ul data-role="listview">
 			<li  data-role="list-divider" >Friday, 03/30/2012</li>
