@@ -63,7 +63,7 @@
 				<li><a href="http://www.linux-magazine.com"><img src="{#ROOT#}/images/flourish-helpers/linux-magazine.jpg" alt="Linux Magazine" /></a></li>
 				<li><a href="http://www.bullcitymobile.com"><img src="{#ROOT#}/images/flourish-helpers/bcm-redblack.png" alt="Bull City Mobile" /></a></li>
 				<li><a href="http://www.illinoistech.org"><img src="{#ROOT#}/images/flourish-helpers/ita.png" alt="Illinois Technology Association" /></a></li>
-			</li>
+			</ul>
 
 		</div>
 		<div class="content">
