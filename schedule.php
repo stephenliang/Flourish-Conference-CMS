@@ -18,6 +18,7 @@ if ( $stmt->prepare($sql) )
 	$current_minute = 0;
 	$i = 0;
 	$j = 0;
+	$fri_max_tracks = 0;
 
 	while ( $row = $result->fetch_assoc())
 	{
@@ -34,6 +35,8 @@ if ( $stmt->prepare($sql) )
 		}else{
 			$j++;
 		}
+
+		if ( $j > $fri_max_tracks ) $fri_max_tracks = $j;
 
 		$talksFri[$i][$j] = $row;
 
@@ -56,6 +59,7 @@ if ( $stmt->prepare($sql) )
 	$current_minute = 0;
 	$i = 0;
 	$j = 0;
+	$sat_max_tracks = 0;
 
 	while ( $row = $result->fetch_assoc())
 	{
@@ -65,6 +69,8 @@ if ( $stmt->prepare($sql) )
 		$row['end_time'] = date("g:i A", $row['end_time']);
 		$row['hour'] = $hour;
 
+
+
 		if ( $hour != $current_hour || $minute != $current_minute )
 		{
 			$i++;
@@ -73,7 +79,15 @@ if ( $stmt->prepare($sql) )
 			$j++;
 		}
 
-		$talksSat[$i][$j] = $row;
+		if ( $j > $sat_max_tracks ) $sat_max_tracks = $j;
+
+		//This is a hack for flourish 2012.. perhaps change it later?
+		if ( $row['location'] == "Illinois A" || $row['name'] == "" || $row['name'] == "Chris McAvoy" )
+			$talksSat[$i][0] = $row;
+		elseif ( $row['location'] == "Illinois B" || $row['location'] == "White Oak Room" )
+			$talksSat[$i][1] = $row;
+		else
+			$talksSat[$i][2] = $row;
 
 		$current_hour = $hour;
 		$current_minute = $minute;
@@ -83,6 +97,8 @@ if ( $stmt->prepare($sql) )
 $stmt->close();
 $smarty->assign('talksFri', $talksFri);
 $smarty->assign('talksSat', $talksSat);
+$smarty->assign('satTracks', $sat_max_tracks+1);
+$smarty->assign('friTracks', $fri_max_tracks+1);
 
 //We reached end, parse and end
 include (SITE_PATH."footer.php");

@@ -46,12 +46,15 @@ if(preg_match('/android.+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|f
 if ( $_GET['viewFullSite'] == 1 )
 {
 	setcookie("viewFullSite", 1);
+	$_COOKIE['viewFullSite'] = 1;
+	$mobile = false;
 }
 if ( $_GET['viewMobileSite'] == 1 )
 {
 	setcookie("viewFullSite", 2);
 	$mobile = true;
 }
+
 if ( $mobile == true || $_COOKIE['viewFullSite'] == 2 ) {
 	$browser['ismobiledevice'] = 1;
 	$smarty->assign('mobileDevice', 1);

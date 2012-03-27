@@ -19,8 +19,10 @@ if ( $_POST )
 	if ( !$_POST['name'] ) $error = "Please enter your name";
 	if ( !$_POST['email'] ) $error = "Please enter your email";
 	if ( !$_POST['student'] ) $error = "Please enter whether you are a UIC student or not";
-	if ( $_POST['size'] != "small" && $_POST['size'] != "medium" && $_POST['size'] != "large" && $_POST['size'] != "xl" && $_POST['size'] != "xxl" && $_POST['size'] != "" ) $error = "Please enter a proper T-Shirt size";
+	if ( $_POST['size'] != "small" && $_POST['size'] != "medium" && $_POST['size'] != "large" && $_POST['size'] != "xl" && $_POST['size'] != "xxl" && $_POST['size'] != "xxxl" && $_POST['size'] != "" ) $error = "Please enter a proper T-Shirt size";
 	if ( $_POST['student'] != "yes" && $_POST['student'] != "no" ) $error = "Please enter a proper student status";
+
+	if ( !strstr( $_POST['email'], "@") ) $error = "Please enter a valid email address";
 
 	$stmt = $db->stmt_init();
 
@@ -71,10 +73,8 @@ $smarty->assign('POST', $_POST);
 //We reached end, parse and end
 include (SITE_PATH."footer.php");
 if ( $success ) {
-	echo "loading thanks";
 	$smarty->display('thanks.tpl');
 } else {
-	echo "Error: ".$stmt->error;
 	$smarty->display('registration.tpl');
 }
 //We're out of here.

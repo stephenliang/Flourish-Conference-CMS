@@ -1,13 +1,14 @@
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-family: sans-serif;
+	font-size: 1em;
 }
 
 .content {
 	margin: auto;
-	padding: 15px 36px;
+	padding: 15px 0px 15px 15px;
 	border-top: 1px solid #000;
 	overflow: hidden;
+	font-size: 0.8em;
 }
 
 #content-container {
@@ -15,10 +16,9 @@ body {
 }
 
 #menu {
-	text-align: right;
+	text-align: left;
 	font-size: 11pt;
 	line-height: 90%;
-	margin-right: 194px;
 }
 
 .menu_item {
@@ -31,19 +31,36 @@ body {
 	text-align: center;
 }
 #logo {
-	width:294px;
+	width: 70%;
+}
+
+#logo img {
+	width: 300px;
+	height: 108px;
 }
 
 #logo-header {
 	width:100%;
 }
-#tagline {
-	width:50%;
-	text-align:right;
-	vertical-align: bottom;
+
+#logo-container {
+	overflow: hidden;
+	position: relative;
 }
+
+#tagline {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+#tagline img {
+	width: 300px;
+	height: 26px;
+}
+
 a {
-	color: darkGray;
+	color: #3A4C7D;
 	text-decoration: none;
 }
 
@@ -57,7 +74,7 @@ a:hover {
 
 .content-title {
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 2em;
 }
 .sponsors-title {
 	text-align: center;
@@ -124,14 +141,14 @@ textarea {
 }
 	
 #flourish-helpers {
-	width: 152px;
+	width: 20%;
 	float: right;
-	padding: 10px;
+	padding: 10px 10px 0px 0px;
 	border-top: 1px solid #000;
-	margin-left: 25px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.25em;
+	margin-left: 20px;
 }
 
 #flourish-helpers li{
@@ -146,8 +163,9 @@ textarea {
 }
 
 #flourish-helpers ul img {
-	max-width: 152px;
-	max-height: 70px;
+	width: 100%;
+	max-width: 150px;
+	height: auto;
 }
 
 .right-img {
@@ -161,8 +179,8 @@ textarea {
 	float: right;
 	margin-left: 20px;
 	margin-bottom: 10px;
-	height: 325px;
-	width: 300px;
+	height: 200px;
+	width: 255px;
 	overflow: hidden;
 	display: none;
 	border: 5px solid #ccc;
@@ -213,18 +231,9 @@ img {
 }
 
 #logo img {
-	width: 50%;
-	max-height: 108px;
 	border-style: none;
-	max-width: 300px;
 }
 
-#tagline img {
-	width: 50%;
-	max-height: 26px;
-	border-style: none;
-	max-width: 300px;
-}
 .big-button {
 	height: 100px;
 	width: 300px;
@@ -365,17 +374,72 @@ iframe {
 	background-color: #E6EEEE;
 }
 
-.schedule .time{
-	width: 13%;
-	border-right: 1px dotted #ccc;
-	border-left: 1px solid #000;
-	padding: 10px;
+.schedule-hour-container {
+	height: 95px;
+	border-top: 1px solid #000;
+	font-size: 10pt;
 }
 
-.schedule .talk-details-a {
+.schedule-hour-container .time{
+	width: 13%;
+	border-right: 1px dotted #ccc;
+	float: left;
+	height: 100%;
+}
+
+.threeTrack {
+	width: 22% !important;
+}
+
+.schedule-hour-container .talk-details-both {
 	text-align: center;
-	width: 44%;
+	width: 86.85%;
+	display: inline-block;
+	height: 100%;
+}
+
+.time span {
+	position: relative;
+	top: 40%;
+}
+
+.tracks_1 {
+	width: 86.77%;
+}
+
+.tracks_2 {
+	width: 43%;
+}
+.tracks_3 {
+	width: 28%;
+}
+.schedule-border-right {
 	border-right: 1px solid #000;
+}
+.talk-title {
+	margin-top: 5px;
+}
+.schedule-hour-container .talk-details-b {
+	display: inline-block;
+	text-align: center;
+	border-left: 1px solid #000;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+
+.schedule-hour-container .talk-details-c {
+	text-align: center;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+.schedule-hour-container .talk-details-a {
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	float: left;
+	position: relative;
 }
 
 .schedule .talk-details-both {
@@ -390,8 +454,7 @@ iframe {
 	width: 44%;
 }
 
-.schedule .presenter {
-	margin: 5px;
+.schedule-hour-container .presenter {
 }
 
 .schedule .talk-location {
@@ -409,7 +472,6 @@ iframe {
 
 .schedule {
 	width: 100%;
-	font-size: 0.9em;
 	border: none;
 }
 
