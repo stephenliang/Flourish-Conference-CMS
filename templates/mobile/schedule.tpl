@@ -5,14 +5,6 @@
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
-	<div data-role="navbar" data-position="fixed">
-		<ul>
-			<li><a href="#roomA" class="ui-btn-active" >A</a></li>
-			<li><a href="#roomB" >B</a></li>
-			<li><a href="#roomC" >C</a></li>
-			<li><a href="#other" >Other</a></li>
-		</ul>
-	</div><!-- nav -->
         <div data-role="content">
 		<ul data-role="listview">
 			<li  data-role="list-divider" >Friday, 03/30/2012</li>
@@ -46,20 +38,22 @@
 				{/foreach}
 			{/foreach}
 	</div><!-- /content -->
+	<div data-role="footer" data-id="nav" data-position="fixed">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#roomA" class="ui-btn-active ui-state-persist">A</a></li>
+				<li><a href="#roomB">B</a></li>
+				<li><a href="#roomC">C</a></li>
+				<li><a href="#other">Other</a></li>
+			</ul>
+		</div><!-- nav -->
+        </div><!-- /footer -->
 </div><!-- page -->
 <div data-role="page" id="roomB">
         <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
-	<div data-role="navbar" data-position="fixed">
-		<ul>
-			<li><a href="#roomA" >A</a></li>
-			<li><a href="#roomB" class="ui-btn-active ui-state-persist" >B</a></li>
-			<li><a href="#roomC" >C</a></li>
-			<li><a href="#other" >Other</a></li>
-		</ul>
-	</div>
         <div data-role="content">
 		<ul data-role="listview">
 			<li data-role="list-divider" >Friday, 03/30/2012</li>
@@ -93,20 +87,22 @@
 				{/foreach}
 		{/foreach}
 	</div><!-- /content -->
+	<div data-role="footer" data-id="nav" data-position="fixed">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#roomA">A</a></li>
+				<li><a href="#roomB" class="ui-btn-active ui-state-persist">B</a></li>
+				<li><a href="#roomC">C</a></li>
+				<li><a href="#other">Other</a></li>
+			</ul>
+		</div><!-- nav -->
+        </div><!-- /footer -->
 </div><!-- page -->
 <div data-role="page" id="roomC">
         <div data-role="header">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
-	<div data-role="navbar" data-position="fixed">
-		<ul>
-			<li><a href="#roomA" >A</a></li>
-			<li><a href="#roomB" >B</a></li>
-			<li><a href="#roomC" class="ui-btn-active ui-state-persist" >C</a></li>
-			<li><a href="#other" >Other</a></li>
-		</ul>
-	</div><!-- nav -->
         <div data-role="content">
 		<ul data-role="listview">
 			<li  data-role="list-divider" >Friday, 03/30/2012</li>
@@ -140,20 +136,22 @@
 				{/foreach}
 		{/foreach}
 	</div><!-- /content -->
+	<div data-role="footer" data-id="nav" data-position="fixed">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#roomA">A</a></li>
+				<li><a href="#roomB">B</a></li>
+				<li><a href="#roomC" class="ui-btn-active ui-state-persist">C</a></li>
+				<li><a href="#other">Other</a></li>
+			</ul>
+		</div><!-- nav -->
+        </div><!-- /footer -->
 </div><!-- page -->
 <div data-role="page" id="other">
-        <div data-role="header">
+        <div data-role="header" data-id="nav" data-position="fixed">
                 <h1>Schedule</h1>
 		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
-	<div data-role="navbar" data-position="fixed">
-		<ul>
-			<li><a href="#roomA" >A</a></li>
-			<li><a href="#roomB" >B</a></li>
-			<li><a href="#roomC" >C</a></li>
-			<li><a href="#other" class="ui-btn-active ui-state-persist" >Other</a></li>
-		</ul>
-	</div><!-- nav -->
         <div data-role="content">
 		<ul data-role="listview">
 			<li  data-role="list-divider" >Friday, 03/30/2012</li>
@@ -188,5 +186,15 @@
 			{/foreach}
 		</ul>
 	</div><!-- /content -->
+	<div data-role="footer" data-id="nav" data-position="fixed">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#roomA">A</a></li>
+				<li><a href="#roomB">B</a></li>
+				<li><a href="#roomC">C</a></li>
+				<li><a href="#other" class="ui-btn-active ui-state-persist">Other</a></li>
+			</ul>
+		</div><!-- nav -->
+        </div><!-- /footer -->
 </div><!-- page -->
 {include file="footer.tpl"}
