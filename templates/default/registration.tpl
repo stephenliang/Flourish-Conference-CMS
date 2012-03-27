@@ -27,7 +27,7 @@
 				<input type="radio" name="size" value="large" {if $POST.size == "large"}checked{/if}> Large (Waitlist)<br />
 				<input type="radio" name="size" value="xl" disabled {if $POST.size == "xl"}checked{/if}> XL<br />
 				<input type="radio" name="size" value="xxl" {if $POST.size == "xxl"}checked{/if}> XXL (Waitlist)<br />
-				<input type="radio" name="size" value="xxxl" {if $POST.size == "xxxl"}checked{/if}> XXXL<br />
+				<input type="radio" name="size" value="xxxl" {if $POST.size == "xxxl"}checked{/if}> XXXL (Waitlist)<br />
 				<br /><br />
 
 				<strong>Are you bringing a laptop? (optional)</strong>:<br />
