@@ -27,6 +27,7 @@ if ( $stmt->prepare($sql) )
 		$row['start_time'] = date("g:i A", $row['start_time']);
 		$row['end_time'] = date("g:i A", $row['end_time']);
 		$row['hour'] = $hour;
+		$row['minute'] = $minute;
 
 		if ( $hour != $current_hour || $minute != $current_minute )
 		{
@@ -68,8 +69,7 @@ if ( $stmt->prepare($sql) )
 		$row['start_time'] = date("g:i A", $row['start_time']);
 		$row['end_time'] = date("g:i A", $row['end_time']);
 		$row['hour'] = $hour;
-
-
+		$row['minute'] = $minute;
 
 		if ( $hour != $current_hour || $minute != $current_minute )
 		{

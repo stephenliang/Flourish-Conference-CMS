@@ -14,7 +14,7 @@
 		{section name=outer loop=$talks}
 		<h3>{$talks[outer].talkTitle}</h3>
 		{$talks[outer].talkDescription}
-		<p><strong>Presentation Time</strong>: {$talks[outer].dayofweek}, {$talks[outer].date}, at <a href="{#ROOT#}/schedule.php#{$talks[outer].dayofweek}_{$talks[outer].hour}">{$talks[outer].start_time} - {$talks[outer].end_time}</a></p>
+		<p><strong>Presentation Time</strong>: {$talks[outer].dayofweek}, {$talks[outer].date}, at <a href="{#ROOT#}/schedule.php#{$talks[outer].dayofweek}_{$talks[outer].hour}{$talks[outer].minute}">{$talks[outer].start_time} - {$talks[outer].end_time}</a></p>
 		<p><strong>Presentation Location</strong>: {$talks[outer].location}</p>
 		{/section}
 		<div style="clear: both"></div>
