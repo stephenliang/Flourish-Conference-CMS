@@ -27,6 +27,7 @@ if ( $stmt->prepare($sql) )
 		while ( $row = $result->fetch_assoc())
 		{
 			$row['hour'] = date("H", $row['start_time']);
+			$row['minute'] = date("i", $row['start_time']);
 			$row['dayofweek'] = date("l", $row['start_time']);
 			$row['date'] = date("m/d/Y", $row['start_time']);
 			$row['start_time'] = date("g:i A", $row['start_time']);
