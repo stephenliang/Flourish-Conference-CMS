@@ -3,7 +3,7 @@
 <div data-role="page" id="miniexpo" data-add-back-btn="true">
         <div data-role="header">
                 <h1>Mini-Expo</h1>
-		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<a href="./" class="ui-btn-right" data-ajax="false" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
         <div data-role="content">
 		<ul data-theme="d" data-role="listview" data-filter="true">

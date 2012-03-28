@@ -3,7 +3,7 @@
 <div data-role="page" id="roomA" data-add-back-btn="true">
         <div data-role="header">
                 <h1>Schedule</h1>
-		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<a href="./" class="ui-btn-right" data-icon="home" data-ajax="false" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
         <div data-role="content">
 		<ul data-role="listview">

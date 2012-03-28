@@ -4,7 +4,7 @@
 
         <div data-role="header">
                 <h1>Registration</h1>
-		<a href="./" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<a href="./" class="ui-btn-right" data-ajax="false" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
         </div><!-- /header -->
 
         <div data-role="content">
