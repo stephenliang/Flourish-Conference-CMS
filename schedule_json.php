@@ -28,7 +28,7 @@ if ( $stmt->prepare($sql) )
 				'contact'	=>	"",
 				'released'	=>	true,
 				'license'	=>	"",
-				'description'	=>	$row['talkDescription'],
+				'description'	=>	strip_tags($row['talkDescription']),
 				'conf_key'	=>	$row['id'],
 				'conf_url'	=>	ROOT."/speakers_detail.php?id=".$row['speaker'],
 				'tags'		=>	"",
