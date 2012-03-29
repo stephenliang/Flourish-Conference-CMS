@@ -2,7 +2,7 @@
 {include file="header.tpl" title="Schedule"}
 			<h1 class="content-title">Schedule</h1>
 
-			<p>This schedule is still tentative, we are working on finalizing our schedule.</p>
+			<p>There will be a soldering workshop throughout Friday and Saturday located in White Oak Room</p>
 
 			<h2>Friday, 03/30/2012</h2>
 			<div class="schedule-container">
