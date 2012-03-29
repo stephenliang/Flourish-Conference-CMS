@@ -1,5 +1,5 @@
 <?php
-define('ROOT', 'http://www.flourishconf.com/2012-test');
+define('ROOT', 'http://www.flourishconf.com/2012');
 
 $ext = '.tpl'; // Required for template files.
 
