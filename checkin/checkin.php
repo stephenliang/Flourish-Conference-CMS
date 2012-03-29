@@ -127,7 +127,7 @@ if( $stmt->prepare($sql)){
 	}
 }
 else{
-	$error = "An error occurred retrieving checkin status.". $stmt->error() .".";
+	$error = "An error occurred retrieving checkin status.". $stmt->error .".";
 }
 //registrant listing block end
 if ( $success ) $smarty->assign('success', $success);

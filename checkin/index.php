@@ -5,7 +5,6 @@
 define('SITE_PATH', '../');
 define('HACKFREE', 1);
 include (SITE_PATH."/checkin/common.php");
-
 //Start session
 session_start();
 if(isset($_SESSION['SESS_USER_ID']) && $_SESSION['SESS_USER_ID'] != 0){
@@ -27,19 +26,14 @@ if ( $_POST )
 
 	$stmt = $db->stmt_init();
 
-	//Prevent escape characters
-	if(!get_magic_quotes_gpc()) {
-	$username = mysql_real_escape_string($_POST['user']);
-	} else {
 	$username = $_POST['user'];
-	}
-	
-	$sql = "SELECT member_id, firstname, lastname FROM ". USER_TABLE ." WHERE login='". $username ."' AND pawd='".md5($_POST['pwd'])."'";
+
+	$sql = "SELECT member_id, firstname, lastname FROM ". USER_TABLE ." WHERE login = ?  AND pawd = ?";
 	//I don't really understand bind_param, so this will work in the meantime.
 	
 	if ( $stmt->prepare($sql) && !$error)
 	{
-
+		$stmt->bind_param("ss", $_POST['user'], md5($_POST['pwd']));
 		if( $stmt->execute() )
 		{
 			//$result = mysql_query($sql);

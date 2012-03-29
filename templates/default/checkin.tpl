@@ -7,7 +7,7 @@
 	<table id="regtable">
 	<tr><th>ID</th><th>Name</th><th>email</th><th>T-Shirt Size</th><th>Wireless Username</th><th>Wireless Password</th><th>Comments</th><th></th></tr>
 	{foreach from=$reglist key=k item=i}
-	<tr class="result"><td>{$k}</td><td>{$i.name}</td><td>{$i.email}</td><td>{$i.tsize}</td><td>{$i.wifiuser}</td><td>{$i.wifipass}</td>{if $i.comments eq ''}<td></td>{else}<td class="regcomcell"><div class="regcomment">{$i.comments}</div></td>{/if}<td class="tdc"><div><form name="checkin1-{$k}" id="checkin1-{$k}" class="formcl" action="./checkin.php" method="post">
+	<tr class="result"><td>{$k}</td><td>{$i.name}</td><td>{$i.email}</td><td>{$i.tsize}</td><td>{$i.wifiuser}</td><td>{$i.wifipass}</td>{if $i.comments == ''}<td></td>{else}<td class="regcomcell"><div class="regcomment">{$i.comments}</div></td>{/if}<td class="tdc"><div><form name="checkin1-{$k}" id="checkin1-{$k}" class="formcl" action="./checkin.php" method="post">
 	<p class="submit">
 		<input type="submit" name="submit" id="submit1-{$k}" class="{if $i.day1}button-secondary{else}button-primary{/if}" value="Day 1 {if $i.day1}Checkout{else}Checkin{/if}" />
 		<input type="hidden" name="day" value="1" />

@@ -30,7 +30,7 @@ if ( $stmt->prepare($sql) )
 				'license'	=>	"",
 				'description'	=>	$row['talkDescription'],
 				'conf_key'	=>	$row['id'],
-				'conf_url'	=>	ROOT."/speakers_details.php?id=".$row['speaker'],
+				'conf_url'	=>	ROOT."/speakers_detail.php?id=".$row['speaker'],
 				'tags'		=>	"",
 			);
 		}
