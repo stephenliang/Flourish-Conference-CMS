@@ -11,23 +11,19 @@
 				<p>{$speaker.bio}</p>	
 			</div>
 
-			{section name=outer loop=$talks}
-			<div data-role="collapsible" data-collapsed="true" data-theme="e">
+			<div data-role="collapsible" data-collapsed="false" data-theme="e">
 				<h1>Presentation Details</h1>
-					<div data-role="collapsible" data-collapsed="false">
-						<h3>{$talks[outer].talkTitle}</h3>
-						<p>{$talks[outer].talkDescription}</p>
-					</div>
-					<div data-role="collapsible" data-collapsed="true">
-						<h3>Presentation Time</h3>
-						<p>{$talks[outer].dayofweek}, {$talks[outer].date}, at <a href="{#ROOT#}/schedule.php#{$talks[outer].dayofweek}_{$talks[outer].hour}">{$talks[outer].start_time} - {$talks[outer].end_time}</a></p>
-					</div>
-					<div data-role="collapsible" data-collapsed="true">
-						<h3>Presentation Location</h3>
-						<p>{$talks[outer].location}</p>
-					</div>
-			</div><!-- /presentation detail div -->
+			{section name=outer loop=$talks}
+				<div>
+					<h3>{$talks[outer].talkTitle}</h3>
+					<p>{$talks[outer].talkDescription}</p>
+					<h3>Presentation Time</h3>
+					<p>{$talks[outer].dayofweek}, {$talks[outer].date}, at <a href="{#ROOT#}/schedule.php#{$talks[outer].dayofweek}_{$talks[outer].hour}">{$talks[outer].start_time} - {$talks[outer].end_time}</a></p>
+					<h3>Presentation Location</h3>
+					<p>{$talks[outer].location}</p>
+				</div>
 			{/section}
+		</div><!-- /presentation detail div -->
 	</div><!-- /content -->
 </div><!-- page -->
 {include file="footer.tpl"}
