@@ -40,6 +40,7 @@ $(window).load(function () {
 
 //prevent double checkin
 $('input[id*="submit"]').click(function(me) {
+	/*
 	if (($(this).val() == "Day 1 Checkin") && ($('input[id*="submit"]').eq($('input[id*="submit"]').index(this)+1).val() == "Day 2 Checkout")) {
 		me.preventDefault();
 		$('#doublecheckin').dialog('option', 'position', 'center');
@@ -50,6 +51,7 @@ $('input[id*="submit"]').click(function(me) {
 		$('#doublecheckin').dialog('option', 'position', 'center');
 		$('#doublecheckin').dialog('open');
 	}
+	*/
 });
 $('.regcomcell').click(function(){$('.regcomcell').eq($('.regcomcell').index(this)).children().slideToggle();});
 
