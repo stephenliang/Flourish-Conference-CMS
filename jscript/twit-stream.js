@@ -66,6 +66,7 @@ function fetch_tweets(elem){
 				var sinceDay=Math.round(sinceMin/1440);
 				var since=sinceDay+' days ago';
 			}
+			if ( this.text.indexOf('Fellas') != -1 ) return;
 			var tweetBy='<a class="tweet-user" target="_blank" href="http://twitter.com/'+this.from_user+'">@'+this.from_user+'</a> <span class="tweet-time">'+since+'</span>';
 			if(showTweetLinks.indexOf('reply')!=-1)
 				tweetBy=tweetBy+' &middot; <a class="tweet-reply" target="_blank" href="http://twitter.com/?status=@'+this.from_user+' &in_reply_to_status_id='+this.id+'&in_reply_to='+this.from_user+'">Reply</a>';
