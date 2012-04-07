@@ -26,6 +26,7 @@ if ($_POST['day'] && ($_POST['checkin_for'] || $_POST['checkout_for'])){
 	else{
 	$regs = $_POST['checkout_for'];
 	}
+	/*
 	$sql = "SELECT regid, check_out_in FROM `". CHECKIN_TABLE ."` WHERE regid='". $regs . "' ORDER BY id DESC LIMIT 1";
 	if( $stmt->prepare($sql)){
 		if($stmt->execute()){
@@ -36,6 +37,7 @@ if ($_POST['day'] && ($_POST['checkin_for'] || $_POST['checkout_for'])){
 		}
 		}
 	}
+	 */
 }
 if ($_POST['day'] && ($_POST['checkin_for'] || $_POST['checkout_for']) && (!$error)){	
 	//checkin and checkout block

@@ -21,6 +21,6 @@ showTweetLinks='all';
 <center><img src="http://www.flourishconf.com/2012/images/flourish_logo.jpg" /></center>
 <br />
 <span id="updated">Last updated: N/A</span>
-<div class="twitStream 20" id="tweets" title="#flourish"></div>
+<div class="twitStream 20" id="tweets" title="#flourish -Fellas -#Gloryyyyyy -#Family -from:CuffsTheLegend -from:katieweisser"></div>
 </body>
 </html>
