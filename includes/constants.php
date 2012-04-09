@@ -8,6 +8,7 @@ define('SPEAKER_TABLE', "f12_speaker_table");
 define('TALKS_TABLE', "f12_talks_table");
 define('USER_TABLE', "f12_members");
 define('REGISTRATION_TABLE', "f12_registration_table");
+define('FEEDBACK_TABLE', "f12_feedback_table");
 define('CHECKIN_TABLE',"f12_checkin");
 define('WIRELESS_TABLE',"f12_wireless");
 define('CONTACT_EMAIL', "info@flourishconf.com");
