@@ -38,7 +38,7 @@
 				{/foreach}
 			{/foreach}
 	</div><!-- /content -->
-	<div data-role="footer" data-id="nav" data-position="fixed">
+	<div data-role="footer" data-id="nav" data-position="fixed" data-tap-toggle="false">
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#roomA" class="ui-btn-active ui-state-persist">A</a></li>
@@ -87,7 +87,7 @@
 				{/foreach}
 		{/foreach}
 	</div><!-- /content -->
-	<div data-role="footer" data-id="nav" data-position="fixed">
+	<div data-role="footer" data-id="nav" data-position="fixed" data-tap-toggle="false">
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#roomA">A</a></li>
@@ -136,7 +136,7 @@
 				{/foreach}
 		{/foreach}
 	</div><!-- /content -->
-	<div data-role="footer" data-id="nav" data-position="fixed">
+	<div data-role="footer" data-id="nav" data-position="fixed" data-tap-toggle="false">
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#roomA">A</a></li>
@@ -186,7 +186,7 @@
 			{/foreach}
 		</ul>
 	</div><!-- /content -->
-	<div data-role="footer" data-id="nav" data-position="fixed">
+	<div data-role="footer" data-id="nav" data-position="fixed" data-tap-toggle="false">
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#roomA">A</a></li>
