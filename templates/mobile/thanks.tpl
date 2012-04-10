@@ -8,6 +8,7 @@
         </div><!-- /header -->
 
 	<div data-role="content">
+	{$successMessage}
 	</div>
 </div>
 {include file="footer.tpl"}
